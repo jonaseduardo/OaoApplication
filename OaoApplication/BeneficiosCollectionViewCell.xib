@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="kYu-Fv-LSY" customClass="BeneficiosCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promotion" translatesAutoresizingMaskIntoConstraints="NO" id="0uE-z0-TZA">
+                        <rect key="frame" x="0.0" y="17" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="bFc-Sw-2aN"/>
+                            <constraint firstAttribute="height" constant="24" id="zVg-SM-RAh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gratis" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNO-2A-CjJ">
+                        <rect key="frame" x="41" y="14" width="132" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ZOU-Cb-FDv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por 2 años" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP8-g1-dLM">
+                        <rect key="frame" x="41" y="30" width="132" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="JIn-PC-HX0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0uE-z0-TZA" firstAttribute="top" secondItem="kYu-Fv-LSY" secondAttribute="top" constant="17" id="2qI-Rp-eCD"/>
+                <constraint firstAttribute="bottom" secondItem="0uE-z0-TZA" secondAttribute="bottom" constant="18" id="5Fw-GL-iFa"/>
+                <constraint firstAttribute="trailing" secondItem="jP8-g1-dLM" secondAttribute="trailing" id="AeI-7t-8k6"/>
+                <constraint firstItem="jP8-g1-dLM" firstAttribute="top" secondItem="hNO-2A-CjJ" secondAttribute="bottom" id="CZL-Oy-1dw"/>
+                <constraint firstItem="hNO-2A-CjJ" firstAttribute="leading" secondItem="0uE-z0-TZA" secondAttribute="trailing" constant="17" id="E2V-7l-iAi"/>
+                <constraint firstAttribute="bottom" secondItem="jP8-g1-dLM" secondAttribute="bottom" constant="13" id="Nhq-HI-KM7"/>
+                <constraint firstItem="0uE-z0-TZA" firstAttribute="leading" secondItem="kYu-Fv-LSY" secondAttribute="leading" id="Pii-KL-Jt6"/>
+                <constraint firstItem="jP8-g1-dLM" firstAttribute="top" secondItem="hNO-2A-CjJ" secondAttribute="bottom" id="QBC-LC-P1n"/>
+                <constraint firstAttribute="trailing" secondItem="hNO-2A-CjJ" secondAttribute="trailing" id="VET-DM-oCr"/>
+                <constraint firstItem="jP8-g1-dLM" firstAttribute="leading" secondItem="0uE-z0-TZA" secondAttribute="trailing" constant="17" id="jzy-sD-djN"/>
+                <constraint firstItem="hNO-2A-CjJ" firstAttribute="top" secondItem="kYu-Fv-LSY" secondAttribute="top" constant="14" id="qAJ-XX-pNn"/>
+            </constraints>
+            <size key="customSize" width="173" height="59"/>
+            <connections>
+                <outlet property="beneficioImg" destination="0uE-z0-TZA" id="wKO-LU-oRS"/>
+                <outlet property="subtitle" destination="jP8-g1-dLM" id="EIk-Mg-2Ff"/>
+                <outlet property="title" destination="hNO-2A-CjJ" id="BHp-he-QZk"/>
+            </connections>
+            <point key="canvasLocation" x="77" y="-196"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="promotion" width="26" height="26"/>
+    </resources>
+</document>

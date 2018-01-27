@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="P7P-vl-LCY" customClass="BBVAPickerButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wi6-jM-W6t">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="P7P-vl-LCY" eventType="touchUpInside" id="RMT-cX-Edf"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unfold_lightblue" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-Kn-SZk">
+                    <rect key="frame" x="342" y="3" width="17" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="17" id="wSj-vH-upy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDk-zJ-Nl4">
+                    <rect key="frame" x="21" y="8" width="313" height="19.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DNI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHJ-WQ-DaR">
+                    <rect key="frame" x="21" y="35" width="313" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wi6-jM-W6t" secondAttribute="trailing" id="1g7-Cs-VJ0"/>
+                <constraint firstItem="Wi6-jM-W6t" firstAttribute="top" secondItem="P7P-vl-LCY" secondAttribute="top" id="3vL-ew-gDX"/>
+                <constraint firstItem="Wi6-jM-W6t" firstAttribute="leading" secondItem="P7P-vl-LCY" secondAttribute="leading" id="ClW-Jv-ktx"/>
+                <constraint firstAttribute="bottom" secondItem="0W1-Kn-SZk" secondAttribute="bottom" constant="5" id="Sm6-kP-xsN"/>
+                <constraint firstAttribute="trailing" secondItem="Wi6-jM-W6t" secondAttribute="trailing" id="VYT-yQ-fND"/>
+                <constraint firstItem="Wi6-jM-W6t" firstAttribute="leading" secondItem="P7P-vl-LCY" secondAttribute="leading" id="YSm-w4-Aeq"/>
+                <constraint firstItem="0W1-Kn-SZk" firstAttribute="top" secondItem="P7P-vl-LCY" secondAttribute="top" constant="3" id="foA-nn-HgU"/>
+                <constraint firstAttribute="trailing" secondItem="0W1-Kn-SZk" secondAttribute="trailing" constant="16" id="tOT-md-wQc"/>
+                <constraint firstAttribute="bottom" secondItem="Wi6-jM-W6t" secondAttribute="bottom" id="twi-la-6h6"/>
+                <constraint firstItem="Wi6-jM-W6t" firstAttribute="top" secondItem="P7P-vl-LCY" secondAttribute="top" id="xdh-HI-lkk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowImage" destination="0W1-Kn-SZk" id="xQp-pZ-oLl"/>
+                <outlet property="button" destination="Wi6-jM-W6t" id="zhz-zf-SQh"/>
+                <outlet property="label" destination="eHJ-WQ-DaR" id="15x-fj-NyX"/>
+                <outlet property="lblTop" destination="vDk-zJ-Nl4" id="Tdd-15-f3q"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="-863"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unfold_lightblue" width="26" height="26"/>
+    </resources>
+</document>

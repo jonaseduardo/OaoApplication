@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatosPersonalesPasoDosViewController">
+            <connections>
+                <outlet property="contPickerViewDocumento" destination="lCK-yB-AFa" id="Pgq-AY-w1t"/>
+                <outlet property="scrollBottomConstraint" destination="m8D-Pl-6hN" id="RHi-jd-Po8"/>
+                <outlet property="scrollView" destination="ryH-wF-L1I" id="zZl-zd-A3v"/>
+                <outlet property="textFieldNombre" destination="qW2-Q7-aw0" id="Naz-fm-Smr"/>
+                <outlet property="textFieldNumeroDocumento" destination="9Pn-VD-XP0" id="TT7-Lb-xC5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sKY-Nh-XY4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryH-wF-L1I">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DN9-92-T9S">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="4"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="c2p-5k-ie6"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahora, algunos datos de tu pareja" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3j-G7-e8X">
+                            <rect key="frame" x="20" y="24" width="335" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="FL0-be-Npw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.027450980392156862" green="0.12941176470588234" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCK-yB-AFa">
+                            <rect key="frame" x="30" y="102" width="315" height="60"/>
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="yJa-fU-An5"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQo-Q8-wYq">
+                            <rect key="frame" x="30" y="182" width="315" height="60"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de documento de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pn-VD-XP0">
+                                    <rect key="frame" x="27" y="15" width="260" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="9Pn-VD-XP0" firstAttribute="top" secondItem="qQo-Q8-wYq" secondAttribute="top" constant="15" id="1tO-ze-W1l"/>
+                                <constraint firstAttribute="height" constant="60" id="86R-6b-cQS"/>
+                                <constraint firstAttribute="bottom" secondItem="9Pn-VD-XP0" secondAttribute="bottom" constant="15" id="Kwt-oE-hBs"/>
+                                <constraint firstAttribute="trailing" secondItem="9Pn-VD-XP0" secondAttribute="trailing" constant="28" id="cZk-N3-Uyu"/>
+                                <constraint firstItem="9Pn-VD-XP0" firstAttribute="leading" secondItem="qQo-Q8-wYq" secondAttribute="leading" constant="27" id="kEm-8R-GnW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNk-oR-mDF">
+                            <rect key="frame" x="30" y="262" width="315" height="60"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre completo de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-Q7-aw0">
+                                    <rect key="frame" x="27" y="15" width="260" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="qW2-Q7-aw0" secondAttribute="bottom" constant="15" id="Yq4-6c-F5g"/>
+                                <constraint firstItem="qW2-Q7-aw0" firstAttribute="top" secondItem="sNk-oR-mDF" secondAttribute="top" constant="15" id="ZHw-18-hOG"/>
+                                <constraint firstAttribute="height" constant="60" id="iLf-Qg-jaW"/>
+                                <constraint firstAttribute="trailing" secondItem="qW2-Q7-aw0" secondAttribute="trailing" constant="28" id="maZ-Iu-ayA"/>
+                                <constraint firstItem="qW2-Q7-aw0" firstAttribute="leading" secondItem="sNk-oR-mDF" secondAttribute="leading" constant="27" id="tvG-7g-nvz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lCK-yB-AFa" firstAttribute="top" secondItem="p3j-G7-e8X" secondAttribute="bottom" constant="20" id="4MF-xH-mOz"/>
+                        <constraint firstItem="p3j-G7-e8X" firstAttribute="leading" secondItem="ryH-wF-L1I" secondAttribute="leading" constant="20" id="4Qw-Ec-n1d"/>
+                        <constraint firstAttribute="trailing" secondItem="lCK-yB-AFa" secondAttribute="trailing" constant="30" id="4mj-8l-Jjx"/>
+                        <constraint firstAttribute="trailing" secondItem="p3j-G7-e8X" secondAttribute="trailing" constant="20" id="9uz-ij-jLI"/>
+                        <constraint firstAttribute="trailing" secondItem="DN9-92-T9S" secondAttribute="trailing" id="Nu2-Xd-wlV"/>
+                        <constraint firstItem="sNk-oR-mDF" firstAttribute="top" secondItem="qQo-Q8-wYq" secondAttribute="bottom" constant="20" id="R7D-Pc-sRn"/>
+                        <constraint firstItem="qQo-Q8-wYq" firstAttribute="trailing" secondItem="sNk-oR-mDF" secondAttribute="trailing" id="V03-LP-qGE"/>
+                        <constraint firstItem="lCK-yB-AFa" firstAttribute="leading" secondItem="ryH-wF-L1I" secondAttribute="leading" constant="30" id="Xeo-nS-71L"/>
+                        <constraint firstItem="DN9-92-T9S" firstAttribute="leading" secondItem="ryH-wF-L1I" secondAttribute="leading" id="ZVz-gt-FTu"/>
+                        <constraint firstItem="DN9-92-T9S" firstAttribute="top" secondItem="ryH-wF-L1I" secondAttribute="top" id="bRl-IR-z6Q"/>
+                        <constraint firstItem="p3j-G7-e8X" firstAttribute="top" secondItem="DN9-92-T9S" secondAttribute="bottom" constant="20" id="eol-we-V1F"/>
+                        <constraint firstAttribute="bottom" secondItem="sNk-oR-mDF" secondAttribute="bottom" constant="167" id="m8D-Pl-6hN"/>
+                        <constraint firstItem="qQo-Q8-wYq" firstAttribute="top" secondItem="lCK-yB-AFa" secondAttribute="bottom" constant="20" id="mFa-y3-Ssh"/>
+                        <constraint firstItem="DN9-92-T9S" firstAttribute="centerX" secondItem="ryH-wF-L1I" secondAttribute="centerX" id="nV1-dM-Xu4"/>
+                        <constraint firstItem="qQo-Q8-wYq" firstAttribute="leading" secondItem="sNk-oR-mDF" secondAttribute="leading" id="qKT-W4-MLr"/>
+                        <constraint firstItem="lCK-yB-AFa" firstAttribute="leading" secondItem="qQo-Q8-wYq" secondAttribute="leading" id="vWM-6D-By4"/>
+                        <constraint firstItem="lCK-yB-AFa" firstAttribute="trailing" secondItem="qQo-Q8-wYq" secondAttribute="trailing" id="wNX-ra-Uix"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-Nh-kLB">
+                    <rect key="frame" x="115" y="587" width="144" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.2666666667" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2i7-WV-g4b"/>
+                        <constraint firstAttribute="width" constant="144" id="itF-JB-xQy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Siguiente">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextBtnTapped:" destination="-1" eventType="touchUpInside" id="nQC-Nh-gua"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5Ot-Nh-kLB" secondAttribute="bottom" constant="30" id="MlC-Xk-AO3"/>
+                <constraint firstItem="5Ot-Nh-kLB" firstAttribute="top" secondItem="ryH-wF-L1I" secondAttribute="bottom" constant="8" symbolic="YES" id="Nid-56-hV5"/>
+                <constraint firstItem="ryH-wF-L1I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wyb-m1-I1p"/>
+                <constraint firstItem="ryH-wF-L1I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YsY-xv-z3i"/>
+                <constraint firstItem="ryH-wF-L1I" firstAttribute="centerX" secondItem="5Ot-Nh-kLB" secondAttribute="centerX" id="h84-ji-Exa"/>
+                <constraint firstAttribute="trailing" secondItem="ryH-wF-L1I" secondAttribute="trailing" id="jh3-hm-KRD"/>
+            </constraints>
+            <point key="canvasLocation" x="95" y="71"/>
+        </view>
+    </objects>
+</document>

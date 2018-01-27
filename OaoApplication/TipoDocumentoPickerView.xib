@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TipoDocumentosPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-kU-5jy">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FyJ-kU-5jy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3bl-PB-2Ne"/>
+                <constraint firstAttribute="trailing" secondItem="FyJ-kU-5jy" secondAttribute="trailing" id="Bmm-qy-KYE"/>
+                <constraint firstAttribute="bottom" secondItem="FyJ-kU-5jy" secondAttribute="bottom" id="JRf-QZ-UHT"/>
+            </constraints>
+            <connections>
+                <outlet property="DocumentoPickerView" destination="FyJ-kU-5jy" id="0o4-Rm-rIN"/>
+            </connections>
+        </view>
+    </objects>
+</document>

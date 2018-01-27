@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Solicitud Tarjeta View Controller-->
+        <scene sceneID="0ih-aW-0yc">
+            <objects>
+                <viewController storyboardIdentifier="initSolicitudTarjeta" id="3ME-Xk-iuQ" customClass="SolicitudTarjetaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OvT-hB-Mub"/>
+                        <viewControllerLayoutGuide type="bottom" id="d4l-kK-ext"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vtr-hb-LzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Uk-zT-mPo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d4l-kK-ext" firstAttribute="top" secondItem="4Uk-zT-mPo" secondAttribute="bottom" id="0e2-B8-IcG"/>
+                            <constraint firstAttribute="trailing" secondItem="4Uk-zT-mPo" secondAttribute="trailing" id="Kj4-Lh-QJz"/>
+                            <constraint firstItem="4Uk-zT-mPo" firstAttribute="leading" secondItem="vtr-hb-LzJ" secondAttribute="leading" id="X2G-3F-Mdm"/>
+                            <constraint firstItem="4Uk-zT-mPo" firstAttribute="top" secondItem="OvT-hB-Mub" secondAttribute="bottom" id="mjK-n8-uow"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="4Uk-zT-mPo" id="zvd-fe-nQd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nl-8A-D0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="-213.64317841079463"/>
+        </scene>
+        <!--Solicitud Tarjeta Datos Personales View Controller-->
+        <scene sceneID="xAp-VY-fb7">
+            <objects>
+                <viewController storyboardIdentifier="initSolicitudTarjetaDatosPersonales" id="WW6-jt-4Fg" customClass="SolicitudTarjetaDatosPersonalesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Des-AB-qtQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="45L-0U-XEs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PYB-Zf-vNi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrq-Sb-rF1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hrq-Sb-rF1" secondAttribute="trailing" id="BbP-FB-aGm"/>
+                            <constraint firstItem="45L-0U-XEs" firstAttribute="top" secondItem="hrq-Sb-rF1" secondAttribute="bottom" id="CBJ-LK-0cQ"/>
+                            <constraint firstItem="hrq-Sb-rF1" firstAttribute="leading" secondItem="PYB-Zf-vNi" secondAttribute="leading" id="GJI-ng-6XQ"/>
+                            <constraint firstItem="hrq-Sb-rF1" firstAttribute="top" secondItem="Des-AB-qtQ" secondAttribute="bottom" id="kSP-5m-732"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="hrq-Sb-rF1" id="q4C-Xj-P8m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gk-y9-J64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-210.04497751124438"/>
+        </scene>
+    </scenes>
+</document>
