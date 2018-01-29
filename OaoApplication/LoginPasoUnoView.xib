@@ -32,23 +32,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="556"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para empezar, necesitamos saber..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsg-di-t6I">
-                            <rect key="frame" x="20" y="21" width="320" height="58"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="58" id="9Uv-mR-e2n"/>
-                            </constraints>
+                            <rect key="frame" x="20" y="21" width="320" height="48"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="0.027450980392156862" green="0.12941176470588234" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGf-B0-66Z">
-                            <rect key="frame" x="30" y="199" width="315" height="100"/>
+                            <rect key="frame" x="30" y="189" width="315" height="100"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="JTa-ir-3yM"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbE-L1-aeR">
-                            <rect key="frame" x="30" y="301" width="144" height="51"/>
+                            <rect key="frame" x="30" y="291" width="144" height="51"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Femenino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5N-Kt-At0">
                                     <rect key="frame" x="10" y="0.0" width="128" height="51"/>
@@ -68,14 +65,14 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSO-Bd-WSC">
-                            <rect key="frame" x="30" y="112" width="316" height="60"/>
+                            <rect key="frame" x="30" y="102" width="316" height="60"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="EQD-Fx-mo6"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6X-2x-PWk">
-                            <rect key="frame" x="202" y="301" width="144" height="51"/>
+                            <rect key="frame" x="202" y="291" width="144" height="51"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masculino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSk-Zo-O2k">
                                     <rect key="frame" x="10" y="0.0" width="130" height="51"/>

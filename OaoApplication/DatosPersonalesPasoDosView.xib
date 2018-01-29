@@ -37,23 +37,20 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahora, algunos datos de tu pareja" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3j-G7-e8X">
-                            <rect key="frame" x="20" y="24" width="335" height="58"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="58" id="FL0-be-Npw"/>
-                            </constraints>
+                            <rect key="frame" x="20" y="24" width="335" height="24"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="0.027450980392156862" green="0.12941176470588234" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCK-yB-AFa">
-                            <rect key="frame" x="30" y="102" width="315" height="60"/>
+                            <rect key="frame" x="30" y="68" width="315" height="60"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="yJa-fU-An5"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQo-Q8-wYq">
-                            <rect key="frame" x="30" y="182" width="315" height="100"/>
+                            <rect key="frame" x="30" y="148" width="315" height="100"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de documento de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pn-VD-XP0">
                                     <rect key="frame" x="27" y="15" width="260" height="30"/>
@@ -72,7 +69,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNk-oR-mDF">
-                            <rect key="frame" x="30" y="284" width="315" height="100"/>
+                            <rect key="frame" x="30" y="250" width="315" height="100"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre completo de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-Q7-aw0">
                                     <rect key="frame" x="27" y="15" width="260" height="30"/>

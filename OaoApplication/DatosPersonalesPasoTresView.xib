@@ -31,36 +31,30 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QjD-bI-aD1">
-                            <rect key="frame" x="31" y="122" width="320" height="60"/>
+                            <rect key="frame" x="31" y="112" width="320" height="60"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="hjj-OO-4en"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voJ-Dy-MyM">
-                            <rect key="frame" x="31" y="202" width="320" height="60"/>
+                            <rect key="frame" x="31" y="192" width="320" height="60"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="fSA-gi-qAE"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTJ-eM-Tpn">
-                            <rect key="frame" x="31" y="282" width="320" height="30"/>
+                            <rect key="frame" x="31" y="272" width="320" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingreso neto mensual" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yle-tM-pmL">
                                     <rect key="frame" x="0.0" y="6" width="156" height="19"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="19" id="tGa-oY-VW2"/>
-                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <color key="textColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(en mano)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qv9-yf-dVb">
                                     <rect key="frame" x="164" y="5" width="65" height="21"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="21" id="vQK-ex-rBg"/>
-                                    </constraints>
                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -78,7 +72,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-sP-dGw">
-                            <rect key="frame" x="31" y="332" width="147.5" height="60"/>
+                            <rect key="frame" x="31" y="322" width="147.5" height="60"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menos de $10.000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POZ-Nj-DMF">
                                     <rect key="frame" x="11" y="0.0" width="125" height="60"/>
@@ -98,7 +92,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lu-u0-qRk">
-                            <rect key="frame" x="203.5" y="332" width="147.5" height="60"/>
+                            <rect key="frame" x="203.5" y="322" width="147.5" height="60"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.000 - $15.000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAq-ty-0xW">
                                     <rect key="frame" x="11" y="0.0" width="125" height="60"/>
@@ -117,7 +111,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JJ-lM-Z45">
-                            <rect key="frame" x="31" y="414" width="147.5" height="60"/>
+                            <rect key="frame" x="31" y="404" width="147.5" height="60"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$15.000 - $25.000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B19-P2-qkI">
                                     <rect key="frame" x="11" y="0.0" width="125" height="60"/>
@@ -136,7 +130,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46G-49-3Nz">
-                            <rect key="frame" x="203.5" y="414" width="147.5" height="60"/>
+                            <rect key="frame" x="203.5" y="404" width="147.5" height="60"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Más de $25.000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg8-x4-uDh">
                                     <rect key="frame" x="11" y="0.0" width="125" height="60"/>
@@ -162,10 +156,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algunos datos más sobre tu trabajo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuO-Y4-yo8">
-                            <rect key="frame" x="20" y="34" width="334" height="58"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="58" id="snD-eE-PAv"/>
-                            </constraints>
+                            <rect key="frame" x="20" y="34" width="334" height="48"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="0.027450980392156862" green="0.12941176470588234" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>

@@ -28,23 +28,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algunos datos mas para preparar tu tarjeta" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZs-K5-55q">
-                            <rect key="frame" x="20" y="20" width="335" height="58"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="58" id="xb9-7X-okT"/>
-                            </constraints>
+                            <rect key="frame" x="20" y="20" width="335" height="48"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" red="0.027450980392156862" green="0.12941176470588234" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFs-xi-C9d">
-                            <rect key="frame" x="30" y="108" width="316" height="100"/>
+                            <rect key="frame" x="30" y="98" width="316" height="100"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="vF1-9q-i6r"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-Fo-e6z">
-                            <rect key="frame" x="30" y="210" width="316" height="100"/>
+                            <rect key="frame" x="30" y="200" width="316" height="100"/>
                             <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="buv-IF-dGW"/>

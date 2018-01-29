@@ -88,7 +88,7 @@
     _documentNumber.delegateProtocolTextField = self;
     
     //creo textfieldNumberDocument
-    _nombreParejaTextField = [[TextFieldViewController alloc]initComponentDateToParentView:_contNombrePareja andHeaderText:@"Nombre completo de tu pareja" typeKeyBoard:[NSNumber numberWithInt:0]];
+    _nombreParejaTextField = [[TextFieldViewController alloc]initComponentDateToParentView:_contNombrePareja andHeaderText:@"Nombre completo de tu pareja" typeKeyBoard:[NSNumber numberWithInt:1]];
     
     _nombreParejaTextField.delegateProtocolTextField = self;
 
@@ -171,7 +171,20 @@
 }
 
 - (IBAction)nextBtnTapped:(id)sender {
-    [_delegateProtocolDatosPersonales transitionToViewController:[_delegateProtocolDatosPersonales returnViewDatosPersonalesPasoTres]];
+    if(![_documentNumber validarCampo] || ![_nombreParejaTextField validarCampo])
+      {
+        if([self.documentNumber.textField.text isEqualToString:@""])
+        {
+            [self.documentNumber ShowError];
+        }
+        if([_nombreParejaTextField.textField.text isEqualToString:@""])
+        {
+            [self.nombreParejaTextField ShowError];
+        }
+       }
+    else{
+        [_delegateProtocolDatosPersonales transitionToViewController:[_delegateProtocolDatosPersonales returnViewDatosPersonalesPasoTres]];
+    }
 }
 - (NSBundle *)getWalletBundle {
     

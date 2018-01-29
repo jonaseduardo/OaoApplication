@@ -75,16 +75,13 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="533"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antes de comenzar, tene en cuenta lo siguiente..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCr-wp-bPB">
-                                        <rect key="frame" x="20" y="20" width="334" height="58"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="58" id="6LF-Y8-zr0"/>
-                                        </constraints>
+                                        <rect key="frame" x="20" y="20" width="334" height="48"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.027450980392156862" green="0.12941176470588234" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzN-VU-bGX">
-                                        <rect key="frame" x="20" y="108" width="335" height="60"/>
+                                        <rect key="frame" x="20" y="98" width="335" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-iz-CxL">
                                                 <rect key="frame" x="13" y="6" width="26" height="26"/>
@@ -114,7 +111,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yz6-Fb-gMy">
-                                        <rect key="frame" x="20" y="198" width="335" height="60"/>
+                                        <rect key="frame" x="20" y="188" width="335" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="PU2-gr-y0f">
                                                 <rect key="frame" x="13" y="6" width="26" height="26"/>
@@ -142,7 +139,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHC-oz-gJL">
-                                        <rect key="frame" x="20" y="288" width="335" height="60"/>
+                                        <rect key="frame" x="20" y="278" width="335" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="Peb-wF-0gY">
                                                 <rect key="frame" x="13" y="6" width="26" height="26"/>
@@ -175,7 +172,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El proceso te llevará entre 10 y 15 minutos, aproximadamente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hz-gn-NbK">
-                                        <rect key="frame" x="30" y="370" width="315" height="100"/>
+                                        <rect key="frame" x="30" y="360" width="315" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="1Au-hy-Hf6"/>
                                         </constraints>

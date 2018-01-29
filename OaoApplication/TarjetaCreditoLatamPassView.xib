@@ -34,19 +34,13 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarjeta de credito Visa Latam Pass" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fai-EF-k8d">
-                                    <rect key="frame" x="27" y="8" width="320" height="23"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="23" id="MVj-2n-3Uh"/>
-                                    </constraints>
+                                    <rect key="frame" x="27" y="8" width="320" height="19.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Con caja de ahorro + tarjeta de débito" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shr-Kr-gqU">
-                                    <rect key="frame" x="27" y="39" width="340" height="21"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="21" id="jPD-Ku-RkR"/>
-                                    </constraints>
+                                    <rect key="frame" x="27" y="35.5" width="340" height="16"/>
                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
@@ -74,15 +68,6 @@
                                 <constraint firstAttribute="width" constant="55" id="JeL-IA-ih3"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te damos una versión virtual de tu tarjeta para comprar online ahora." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1M-Pl-x6z">
-                            <rect key="frame" x="93" y="449" width="258" height="34"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="34" id="Ke1-Xe-LSo"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
-                            <color key="textColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ocs-FF-zyE">
                             <rect key="frame" x="25" y="273" width="327" height="151"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,20 +81,26 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te damos una versión virtual de tu tarjeta para comprar online ahora." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1M-Pl-x6z">
+                            <rect key="frame" x="94" y="452" width="258" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                            <color key="textColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="ocs-FF-zyE" secondAttribute="trailing" constant="23" id="1eb-Qr-Geq"/>
                         <constraint firstItem="ocs-FF-zyE" firstAttribute="leading" secondItem="vB3-bw-fOm" secondAttribute="leading" constant="25" id="AOb-yj-InC"/>
-                        <constraint firstItem="y1M-Pl-x6z" firstAttribute="top" secondItem="ocs-FF-zyE" secondAttribute="bottom" constant="25" id="Iuz-3c-8t9"/>
-                        <constraint firstAttribute="bottom" secondItem="y1M-Pl-x6z" secondAttribute="bottom" constant="30" id="Nzd-Sn-fwJ"/>
+                        <constraint firstItem="y1M-Pl-x6z" firstAttribute="top" secondItem="ocs-FF-zyE" secondAttribute="bottom" constant="28" id="Iuz-3c-8t9"/>
+                        <constraint firstAttribute="bottom" secondItem="y1M-Pl-x6z" secondAttribute="bottom" constant="70" id="Nzd-Sn-fwJ"/>
                         <constraint firstItem="VI9-la-ztm" firstAttribute="centerX" secondItem="ocs-FF-zyE" secondAttribute="centerX" constant="-1" id="PSU-5s-q3q"/>
                         <constraint firstAttribute="trailing" secondItem="VI9-la-ztm" secondAttribute="trailing" id="THp-47-MkR"/>
-                        <constraint firstItem="y1M-Pl-x6z" firstAttribute="leading" secondItem="6pX-fv-wjl" secondAttribute="trailing" constant="14" id="VDm-SD-8xe"/>
+                        <constraint firstItem="y1M-Pl-x6z" firstAttribute="leading" secondItem="6pX-fv-wjl" secondAttribute="trailing" constant="15" id="VDm-SD-8xe"/>
                         <constraint firstItem="ocs-FF-zyE" firstAttribute="leading" secondItem="6pX-fv-wjl" secondAttribute="leading" constant="1" id="YnC-4P-QYM"/>
                         <constraint firstItem="VI9-la-ztm" firstAttribute="centerX" secondItem="vB3-bw-fOm" secondAttribute="centerX" id="eTS-Mw-DHe"/>
                         <constraint firstItem="VI9-la-ztm" firstAttribute="top" secondItem="vB3-bw-fOm" secondAttribute="top" id="fGh-WB-6rb"/>
                         <constraint firstItem="6pX-fv-wjl" firstAttribute="top" secondItem="ocs-FF-zyE" secondAttribute="bottom" constant="25" id="g0Z-3h-bgU"/>
-                        <constraint firstAttribute="trailing" secondItem="y1M-Pl-x6z" secondAttribute="trailing" constant="24" id="nPN-eQ-lLV"/>
+                        <constraint firstAttribute="trailing" secondItem="y1M-Pl-x6z" secondAttribute="trailing" constant="23" id="nPN-eQ-lLV"/>
                         <constraint firstItem="ocs-FF-zyE" firstAttribute="top" secondItem="VI9-la-ztm" secondAttribute="bottom" constant="13" id="pFL-X9-7ha"/>
                         <constraint firstItem="VI9-la-ztm" firstAttribute="leading" secondItem="vB3-bw-fOm" secondAttribute="leading" id="vzC-Yg-uL7"/>
                     </constraints>

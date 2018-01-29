@@ -94,7 +94,11 @@
     NSString *text = [self.beneficios objectAtIndex:indexPath.row];
     
     // populate the cell
+    /*cell.title.adjustsFontSizeToFitWidth = YES;
+    cell.title.minimumScaleFactor = 11.0f / cell.title.font.pointSize;*/
     cell.title.text = text;
+    /*cell.subtitle.adjustsFontSizeToFitWidth = YES;
+    cell.subtitle.minimumScaleFactor = 10.0f / cell.subtitle.font.pointSize;*/
     cell.subtitle.text = @"Por 2 años";
     cell.backgroundColor = [UIColor whiteColor];
     // return the cell

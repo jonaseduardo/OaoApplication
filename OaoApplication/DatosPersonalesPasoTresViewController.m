@@ -156,5 +156,7 @@
     
     self.initiallySelectedOptions = @[option];
 }
-
+-(void)nextBtnTapped:(id)sender{
+    
+}
 @end
