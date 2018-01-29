@@ -37,17 +37,17 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFs-xi-C9d">
-                            <rect key="frame" x="30" y="108" width="316" height="60"/>
+                            <rect key="frame" x="30" y="108" width="316" height="100"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="60" id="vF1-9q-i6r"/>
+                                <constraint firstAttribute="height" constant="100" id="vF1-9q-i6r"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-Fo-e6z">
-                            <rect key="frame" x="30" y="188" width="316" height="60"/>
+                            <rect key="frame" x="30" y="210" width="316" height="100"/>
                             <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="60" id="buv-IF-dGW"/>
+                                <constraint firstAttribute="height" constant="100" id="buv-IF-dGW"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -63,7 +63,7 @@
                         <constraint firstItem="MZs-K5-55q" firstAttribute="centerX" secondItem="p4h-YI-tYN" secondAttribute="centerX" id="U44-e7-7k2"/>
                         <constraint firstItem="MZs-K5-55q" firstAttribute="top" secondItem="p4h-YI-tYN" secondAttribute="top" constant="20" id="bKW-f2-A8T"/>
                         <constraint firstItem="MZs-K5-55q" firstAttribute="centerX" secondItem="zFs-xi-C9d" secondAttribute="centerX" id="sbe-NY-oDZ"/>
-                        <constraint firstItem="Ms5-Fo-e6z" firstAttribute="top" secondItem="zFs-xi-C9d" secondAttribute="bottom" constant="20" id="uqR-lu-UNK"/>
+                        <constraint firstItem="Ms5-Fo-e6z" firstAttribute="top" secondItem="zFs-xi-C9d" secondAttribute="bottom" constant="2" id="uqR-lu-UNK"/>
                         <constraint firstItem="zFs-xi-C9d" firstAttribute="top" secondItem="MZs-K5-55q" secondAttribute="bottom" constant="30" id="z5D-s7-MhL"/>
                     </constraints>
                 </scrollView>

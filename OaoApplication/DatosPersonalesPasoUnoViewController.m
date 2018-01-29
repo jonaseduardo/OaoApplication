@@ -8,19 +8,32 @@
 
 #import "DatosPersonalesPasoUnoViewController.h"
 #import "UIColor+WalletColors.h"
+#import "BBVAPickerButtonView.h"
+#import "OptionPickerViewController.h"
 
-@interface DatosPersonalesPasoUnoViewController ()
+@interface DatosPersonalesPasoUnoViewController ()<OptionPickerDelegate>
 {
     
-    
+    BBVAPickerButtonView *selectedPickerBtn;
+    OptionPickerViewController *optionPickerViewController;
+    OptionPickerViewController *optionPickerViewControllerEstadoCivil;
     NSString *tipoDocumento;
     Boolean checkSelected;
     UIView *keyboardNavView;
     BOOL keyboardShown;
     CGFloat bottomConstraintConstant;
     CGFloat keyboardHeight;
-    int index;
+    NSNumber *index;
 }
+@property (nonatomic,strong) BBVAPickerButtonView* condicionIvaPickerBtnView;
+@property (nonatomic,strong) BBVAPickerButtonView* estadoCivilPickerBtnView;
+
+@property (strong, nonatomic) NSArray *options;
+@property (strong, nonatomic) NSArray *initiallySelectedOptions;
+
+@property (strong, nonatomic) NSArray *optionsEstadoCivil;
+@property (strong, nonatomic) NSArray *initiallySelectedOptionsEstadoCivil;
+
 @end
 
 @implementation DatosPersonalesPasoUnoViewController
@@ -46,6 +59,24 @@
     index = 0;
     bottomConstraintConstant = 24;
     keyboardHeight = 0;
+    
+    self.options = @[@"Opcion 1",@"Opcion 2"];
+    self.initiallySelectedOptions = @[@"Opcion 1"];
+    
+    self.optionsEstadoCivil = @[@"Opcion 1",@"Opcion 2"];
+    self.initiallySelectedOptionsEstadoCivil = @[@"Opcion 1"];
+    
+    //Crea el picker view de documentos
+    _condicionIvaPickerBtnView = [[BBVAPickerButtonView alloc] initWithFrame:CGRectMake(0, 0, _contFirstPickerView.frame.size.width, _contFirstPickerView.frame.size.height)];
+    [_contFirstPickerView addSubview:_condicionIvaPickerBtnView];
+    _condicionIvaPickerBtnView.lblTop.text = @"Condicion frente al IVA";
+    _condicionIvaPickerBtnView.delegatePicker = self;
+    
+    //Crea el picker view de documentos
+    _estadoCivilPickerBtnView = [[BBVAPickerButtonView alloc] initWithFrame:CGRectMake(0, 0, _contSecondPickerView.frame.size.width, _contSecondPickerView.frame.size.height)];
+    [_contSecondPickerView addSubview:_estadoCivilPickerBtnView];
+    _estadoCivilPickerBtnView.lblTop.text = @"Estado Civil";
+    _estadoCivilPickerBtnView.delegatePicker = self;
     
     [self addDismissWithTap];
     
@@ -138,7 +169,8 @@
     [_delegateProtocolDatosPersonales transitionToViewController:[_delegateProtocolDatosPersonales returnViewDatosPersonalesPasoDos]];
 }
 -(void)pickCuit{
-    self.secondContPickerViewHeight.constant = 60;
+    self.firstContPickerViewHeight.constant = 60;
+    self.firstPickerViewConstraintToTopView.constant = 20;
     self.textFieldNumero.placeholder = @"Numero de CUIT";
     
     self.contCuil.backgroundColor = [UIColor OaoColor_GrayBackground];
@@ -148,7 +180,8 @@
     self.lblCuit.textColor = [UIColor whiteColor];
 }
 -(void)pickCuil{
-    self.secondContPickerViewHeight.constant = 0;
+    self.firstContPickerViewHeight.constant = 0;
+    self.firstPickerViewConstraintToTopView.constant = 0;
     self.textFieldNumero.placeholder = @"Numero de CUIL";
     
     self.contCuit.backgroundColor = [UIColor OaoColor_GrayBackground];
@@ -168,5 +201,92 @@
      */
     
     return [NSBundle mainBundle];
+}
+-(void)pickCondicionIva{
+    [UIView animateWithDuration:0.5f animations:^{
+        self.condicionIvaPickerBtnView.arrowImage.transform = CGAffineTransformMakeRotation(M_PI);
+    } completion:^(BOOL finished) {
+        //code for completion
+        optionPickerViewController = [[OptionPickerViewController alloc] initWithNibName:NSStringFromClass([OptionPickerViewController class]) bundle:nil];
+        optionPickerViewController.delegate = self;
+        optionPickerViewController.options = self.options;
+        optionPickerViewController.initiallySelectedOptions = self.initiallySelectedOptions;
+        [optionPickerViewController presentInViewController:self animated:YES];
+        
+        [UIView animateWithDuration:1.5f animations:^{
+            self.condicionIvaPickerBtnView.arrowImage.transform = CGAffineTransformMakeRotation(M_PI*2);
+        } completion:^(BOOL finished) {
+            //code for completion
+            
+        }];
+        
+    }];
+}
+-(void)pickEstadoCivil{
+    [UIView animateWithDuration:0.5f animations:^{
+        self.estadoCivilPickerBtnView.arrowImage.transform = CGAffineTransformMakeRotation(M_PI);
+    } completion:^(BOOL finished) {
+        //code for completion
+        optionPickerViewControllerEstadoCivil = [[OptionPickerViewController alloc] initWithNibName:NSStringFromClass([OptionPickerViewController class]) bundle:nil];
+        optionPickerViewControllerEstadoCivil.delegate = self;
+        optionPickerViewControllerEstadoCivil.options = self.optionsEstadoCivil;
+        optionPickerViewControllerEstadoCivil.initiallySelectedOptions = self.initiallySelectedOptionsEstadoCivil;
+        [optionPickerViewControllerEstadoCivil presentInViewController:self animated:YES];
+        
+        [UIView animateWithDuration:1.5f animations:^{
+            self.estadoCivilPickerBtnView.arrowImage.transform = CGAffineTransformMakeRotation(M_PI*2);
+        } completion:^(BOOL finished) {
+            //code for completion
+            
+        }];
+        
+    }];
+}
+#pragma mark BBVAButtonPickerView
+- (void)pickerBtnTapped:(id)pickerButton {
+    
+    [self dismissAll];
+    selectedPickerBtn = (BBVAPickerButtonView*)pickerButton;
+    
+    // [self addKeyboardNavigationViewPicker:pickerButton];
+    
+    if (pickerButton == _condicionIvaPickerBtnView){
+        //[self setTiposDocumento];
+        
+        _condicionIvaPickerBtnView.topLabelConstraintTop.constant = 12;
+        [_condicionIvaPickerBtnView.lblTop setFrame:CGRectMake(_condicionIvaPickerBtnView.lblTop.frame.origin.x, 12, _condicionIvaPickerBtnView.lblTop.frame.size.width, 12)];
+        _condicionIvaPickerBtnView.lblTop.font = [UIFont systemFontOfSize:12];
+        
+        [_condicionIvaPickerBtnView.label setFrame:CGRectMake(20, (60-12-16), _condicionIvaPickerBtnView.lblTop.frame.size.width, 16)];
+        
+        [self pickCondicionIva];
+        
+    };
+    if(pickerButton == _estadoCivilPickerBtnView){
+        //[self setNacionalidad];
+        _estadoCivilPickerBtnView.topLabelConstraintTop.constant = 12;
+        [_estadoCivilPickerBtnView.lblTop setFrame:CGRectMake(_estadoCivilPickerBtnView.lblTop.frame.origin.x, 12, _estadoCivilPickerBtnView.lblTop.frame.size.width, 12)];
+        _estadoCivilPickerBtnView.lblTop.font = [UIFont systemFontOfSize:12];
+        
+        [_estadoCivilPickerBtnView.label setFrame:CGRectMake(20, (60-12-16), _estadoCivilPickerBtnView.lblTop.frame.size.width, 16)];
+        
+        [self pickEstadoCivil];
+    }
+}
+#pragma mark - OptionPickerViewController methods
+
+- (void)optionPicker:(OptionPickerViewController *)sender didSelectOption:(id)option forCaller:(id)caller {
+    
+    
+    if(sender == optionPickerViewController){
+        _condicionIvaPickerBtnView.label.text = option;
+        _condicionIvaPickerBtnView.label.hidden = NO;
+    }
+    if(sender == optionPickerViewControllerEstadoCivil){
+        _estadoCivilPickerBtnView.label.text = option;
+        _estadoCivilPickerBtnView.label.hidden = NO;
+    }
+
+    self.initiallySelectedOptions = @[option];
 }
 @end

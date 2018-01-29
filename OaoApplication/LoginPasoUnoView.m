@@ -76,10 +76,7 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    //creo textfieldNumberDocument
-    _documentNumber = [[TextFieldViewController alloc]initComponentDateToParentView:_contNumberDocument andHeaderText:@"Numero de documento" typeKeyBoard:[NSNumber numberWithInt:0]];
     
-    _documentNumber.delegateProtocolTextField = self;
     
     //Crea el picker view de documentos
     _documentoTipoPickerBtnView = [[BBVAPickerButtonView alloc] initWithFrame:CGRectMake(0, 0, _contBtnPickerView.frame.size.width, _contBtnPickerView.frame.size.height)];
@@ -102,6 +99,12 @@
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
+    //creo textfieldNumberDocument
+    _documentNumber = [[TextFieldViewController alloc]initComponentDateToParentView:_contNumberDocument andHeaderText:@"Numero de documento de tu pareja" typeKeyBoard:[NSNumber numberWithInt:0]];
+    
+    _documentNumber.delegateProtocolTextField = self;
+    
 }
 
 #pragma mark textfields

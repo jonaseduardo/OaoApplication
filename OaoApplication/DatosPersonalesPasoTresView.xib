@@ -11,6 +11,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatosPersonalesPasoTresViewController">
             <connections>
+                <outlet property="contFirstPickerView" destination="QjD-bI-aD1" id="Qex-kc-hGe"/>
+                <outlet property="contOpcion1" destination="rl4-sP-dGw" id="yBY-mI-YkE"/>
+                <outlet property="contOpcion2" destination="2Lu-u0-qRk" id="pVt-Hp-j81"/>
+                <outlet property="contOpcion3" destination="1JJ-lM-Z45" id="cVR-hY-da0"/>
+                <outlet property="contOpcion4" destination="46G-49-3Nz" id="V2r-yg-IOk"/>
+                <outlet property="contSecondPickerView" destination="voJ-Dy-MyM" id="7lh-sE-g84"/>
+                <outlet property="scrollBottomConstraint" destination="bch-V8-3qv" id="LQb-BG-xb7"/>
+                <outlet property="scrollView" destination="jaX-nC-cTK" id="UCJ-bG-qey"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qgG-nH-yP9"/>
             </connections>
         </placeholder>
@@ -208,6 +216,9 @@
                     <state key="normal" title="Siguiente">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="nextBtnTapped:" destination="-1" eventType="touchUpInside" id="oHV-H3-rCg"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

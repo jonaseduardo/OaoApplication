@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatosPersonalesPasoDosViewController">
             <connections>
+                <outlet property="contNombrePareja" destination="sNk-oR-mDF" id="sPO-n6-PgJ"/>
+                <outlet property="contNumberDocument" destination="qQo-Q8-wYq" id="rCP-Tl-3ft"/>
                 <outlet property="contPickerViewDocumento" destination="lCK-yB-AFa" id="Pgq-AY-w1t"/>
                 <outlet property="scrollBottomConstraint" destination="m8D-Pl-6hN" id="RHi-jd-Po8"/>
                 <outlet property="scrollView" destination="ryH-wF-L1I" id="zZl-zd-A3v"/>
@@ -51,7 +53,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQo-Q8-wYq">
-                            <rect key="frame" x="30" y="182" width="315" height="60"/>
+                            <rect key="frame" x="30" y="182" width="315" height="100"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de documento de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pn-VD-XP0">
                                     <rect key="frame" x="27" y="15" width="260" height="30"/>
@@ -63,14 +65,14 @@
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="9Pn-VD-XP0" firstAttribute="top" secondItem="qQo-Q8-wYq" secondAttribute="top" constant="15" id="1tO-ze-W1l"/>
-                                <constraint firstAttribute="height" constant="60" id="86R-6b-cQS"/>
-                                <constraint firstAttribute="bottom" secondItem="9Pn-VD-XP0" secondAttribute="bottom" constant="15" id="Kwt-oE-hBs"/>
+                                <constraint firstAttribute="height" constant="100" id="86R-6b-cQS"/>
+                                <constraint firstAttribute="bottom" secondItem="9Pn-VD-XP0" secondAttribute="bottom" constant="55" id="Kwt-oE-hBs"/>
                                 <constraint firstAttribute="trailing" secondItem="9Pn-VD-XP0" secondAttribute="trailing" constant="28" id="cZk-N3-Uyu"/>
                                 <constraint firstItem="9Pn-VD-XP0" firstAttribute="leading" secondItem="qQo-Q8-wYq" secondAttribute="leading" constant="27" id="kEm-8R-GnW"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNk-oR-mDF">
-                            <rect key="frame" x="30" y="262" width="315" height="60"/>
+                            <rect key="frame" x="30" y="284" width="315" height="100"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre completo de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-Q7-aw0">
                                     <rect key="frame" x="27" y="15" width="260" height="30"/>
@@ -81,9 +83,9 @@
                             </subviews>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="qW2-Q7-aw0" secondAttribute="bottom" constant="15" id="Yq4-6c-F5g"/>
+                                <constraint firstAttribute="bottom" secondItem="qW2-Q7-aw0" secondAttribute="bottom" constant="55" id="Yq4-6c-F5g"/>
                                 <constraint firstItem="qW2-Q7-aw0" firstAttribute="top" secondItem="sNk-oR-mDF" secondAttribute="top" constant="15" id="ZHw-18-hOG"/>
-                                <constraint firstAttribute="height" constant="60" id="iLf-Qg-jaW"/>
+                                <constraint firstAttribute="height" constant="100" id="iLf-Qg-jaW"/>
                                 <constraint firstAttribute="trailing" secondItem="qW2-Q7-aw0" secondAttribute="trailing" constant="28" id="maZ-Iu-ayA"/>
                                 <constraint firstItem="qW2-Q7-aw0" firstAttribute="leading" secondItem="sNk-oR-mDF" secondAttribute="leading" constant="27" id="tvG-7g-nvz"/>
                             </constraints>
@@ -95,13 +97,13 @@
                         <constraint firstAttribute="trailing" secondItem="lCK-yB-AFa" secondAttribute="trailing" constant="30" id="4mj-8l-Jjx"/>
                         <constraint firstAttribute="trailing" secondItem="p3j-G7-e8X" secondAttribute="trailing" constant="20" id="9uz-ij-jLI"/>
                         <constraint firstAttribute="trailing" secondItem="DN9-92-T9S" secondAttribute="trailing" id="Nu2-Xd-wlV"/>
-                        <constraint firstItem="sNk-oR-mDF" firstAttribute="top" secondItem="qQo-Q8-wYq" secondAttribute="bottom" constant="20" id="R7D-Pc-sRn"/>
+                        <constraint firstItem="sNk-oR-mDF" firstAttribute="top" secondItem="qQo-Q8-wYq" secondAttribute="bottom" constant="2" id="R7D-Pc-sRn"/>
                         <constraint firstItem="qQo-Q8-wYq" firstAttribute="trailing" secondItem="sNk-oR-mDF" secondAttribute="trailing" id="V03-LP-qGE"/>
                         <constraint firstItem="lCK-yB-AFa" firstAttribute="leading" secondItem="ryH-wF-L1I" secondAttribute="leading" constant="30" id="Xeo-nS-71L"/>
                         <constraint firstItem="DN9-92-T9S" firstAttribute="leading" secondItem="ryH-wF-L1I" secondAttribute="leading" id="ZVz-gt-FTu"/>
                         <constraint firstItem="DN9-92-T9S" firstAttribute="top" secondItem="ryH-wF-L1I" secondAttribute="top" id="bRl-IR-z6Q"/>
                         <constraint firstItem="p3j-G7-e8X" firstAttribute="top" secondItem="DN9-92-T9S" secondAttribute="bottom" constant="20" id="eol-we-V1F"/>
-                        <constraint firstAttribute="bottom" secondItem="sNk-oR-mDF" secondAttribute="bottom" constant="167" id="m8D-Pl-6hN"/>
+                        <constraint firstAttribute="bottom" secondItem="sNk-oR-mDF" secondAttribute="bottom" constant="187" id="m8D-Pl-6hN"/>
                         <constraint firstItem="qQo-Q8-wYq" firstAttribute="top" secondItem="lCK-yB-AFa" secondAttribute="bottom" constant="20" id="mFa-y3-Ssh"/>
                         <constraint firstItem="DN9-92-T9S" firstAttribute="centerX" secondItem="ryH-wF-L1I" secondAttribute="centerX" id="nV1-dM-Xu4"/>
                         <constraint firstItem="qQo-Q8-wYq" firstAttribute="leading" secondItem="sNk-oR-mDF" secondAttribute="leading" id="qKT-W4-MLr"/>

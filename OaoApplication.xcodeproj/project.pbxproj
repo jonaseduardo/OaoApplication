@@ -29,6 +29,7 @@
 		E9B55418200E6FA30038E5DB /* BBVAPickerButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B55417200E6FA30038E5DB /* BBVAPickerButtonView.m */; };
 		E9B55420200E71C10038E5DB /* BBVAPickerButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B5541F200E71C10038E5DB /* BBVAPickerButtonView.xib */; };
 		E9B5542B200E7BA30038E5DB /* TipoDocumentoPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B5542A200E7BA30038E5DB /* TipoDocumentoPickerView.xib */; };
+		E9D76853201F6633000E1107 /* ComponentTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D76852201F6633000E1107 /* ComponentTextFieldView.xib */; };
 		E9DD7133201623320007173E /* BeneficiosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DD7132201623320007173E /* BeneficiosCollectionViewCell.xib */; };
 		E9DD7136201625600007173E /* BeneficiosCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DD71352016255F0007173E /* BeneficiosCollectionViewCell.m */; };
 		E9DD7139201669230007173E /* UsuarioLogeadoMensajeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DD7138201669230007173E /* UsuarioLogeadoMensajeViewController.m */; };
@@ -61,7 +62,6 @@
 		E9FC55CC2012656900DE0D91 /* UsuarioLogeadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC55CB2012656900DE0D91 /* UsuarioLogeadoViewController.m */; };
 		E9FC55CF2012669700DE0D91 /* UserConOfertaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC55CE2012669700DE0D91 /* UserConOfertaViewController.m */; };
 		E9FE1709201B93970092EB54 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FE1708201B93970092EB54 /* TextFieldViewController.m */; };
-		E9FE170B201B95D30092EB54 /* ComponentTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FE170A201B95D30092EB54 /* ComponentTextFieldView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +120,7 @@
 		E9B55417200E6FA30038E5DB /* BBVAPickerButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBVAPickerButtonView.m; sourceTree = "<group>"; };
 		E9B5541F200E71C10038E5DB /* BBVAPickerButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBVAPickerButtonView.xib; sourceTree = "<group>"; };
 		E9B5542A200E7BA30038E5DB /* TipoDocumentoPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipoDocumentoPickerView.xib; sourceTree = "<group>"; };
+		E9D76852201F6633000E1107 /* ComponentTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentTextFieldView.xib; sourceTree = "<group>"; };
 		E9DD7132201623320007173E /* BeneficiosCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeneficiosCollectionViewCell.xib; sourceTree = "<group>"; };
 		E9DD71342016255F0007173E /* BeneficiosCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeneficiosCollectionViewCell.h; sourceTree = "<group>"; };
 		E9DD71352016255F0007173E /* BeneficiosCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeneficiosCollectionViewCell.m; sourceTree = "<group>"; };
@@ -172,7 +173,6 @@
 		E9FC55CE2012669700DE0D91 /* UserConOfertaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserConOfertaViewController.m; sourceTree = "<group>"; };
 		E9FE1707201B93970092EB54 /* TextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
 		E9FE1708201B93970092EB54 /* TextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
-		E9FE170A201B95D30092EB54 /* ComponentTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentTextFieldView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,7 +428,7 @@
 			children = (
 				E9FE1707201B93970092EB54 /* TextFieldViewController.h */,
 				E9FE1708201B93970092EB54 /* TextFieldViewController.m */,
-				E9FE170A201B95D30092EB54 /* ComponentTextFieldView.xib */,
+				E9D76852201F6633000E1107 /* ComponentTextFieldView.xib */,
 			);
 			name = ComponentTextField;
 			sourceTree = "<group>";
@@ -556,7 +556,7 @@
 				E9B5542B200E7BA30038E5DB /* TipoDocumentoPickerView.xib in Resources */,
 				E9FC55C82012602A00DE0D91 /* Flow2.storyboard in Resources */,
 				E9F689A82017BE8B002E2556 /* SolicitudTarjeta.storyboard in Resources */,
-				E9FE170B201B95D30092EB54 /* ComponentTextFieldView.xib in Resources */,
+				E9D76853201F6633000E1107 /* ComponentTextFieldView.xib in Resources */,
 				E9FC55C32012276300DE0D91 /* TarjetaCreditoLatamPassView.xib in Resources */,
 				E9EBC900201A15F200DB2F7F /* DatosPersonalesPasoTresView.xib in Resources */,
 				E9B55415200E59E60038E5DB /* LoginPasoUnoView.xib in Resources */,

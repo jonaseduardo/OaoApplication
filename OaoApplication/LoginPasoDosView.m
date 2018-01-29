@@ -164,7 +164,20 @@
     [_lastNameTextField.textField becomeFirstResponder];
 }
 - (IBAction)nextBtnTapped:(id)sender {
-    [_delegateProtocolLogin transitionToViewController:[_delegateProtocolLogin returnViewLoginPasoTres]];
+    if(![_nameTextField validarCampo] || ![_lastNameTextField validarCampo])
+    {
+        if([self.nameTextField.textField.text isEqualToString:@""])
+        {
+            [self.nameTextField ShowError];
+        }
+        if([_lastNameTextField.textField.text isEqualToString:@""])
+        {
+            [self.lastNameTextField ShowError];
+        }
+    }
+    else{
+        [_delegateProtocolLogin transitionToViewController:[_delegateProtocolLogin returnViewLoginPasoTres]];
+    }
 }
 #pragma mark - TextFieldComponent
 

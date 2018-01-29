@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "SolicitudTarjetaDatosPersonalesViewController.h"
+#import "BBVAPickerButtonView.h"
 
-@interface DatosPersonalesPasoDosViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate>
+@interface DatosPersonalesPasoDosViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,protocolPickerButtonViewDelegate>
 
 @property (strong, nonatomic) id <protocolDatosPersonales> delegateProtocolDatosPersonales;
 
 + (DatosPersonalesPasoDosViewController *)getVcId;
+@property (strong, nonatomic) IBOutlet UIView *contNumberDocument;
+@property (strong, nonatomic) IBOutlet UIView *contNombrePareja;
 
 @property (strong, nonatomic) IBOutlet UIView *contPickerViewDocumento;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldNumeroDocumento;

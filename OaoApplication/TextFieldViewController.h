@@ -24,10 +24,15 @@
 
 -(void)dismissKeyBoard;
 -(void)ShowError;
+-(Boolean)validarCampo;
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @property (weak, nonatomic) IBOutlet UILabel *headerText;
 @property (weak, nonatomic) IBOutlet UIButton *closeButton;
-
+@property (strong, nonatomic) IBOutlet UIView *contTextFieldView;
+@property (strong, nonatomic) IBOutlet UILabel *lblDescripcionError;
+@property (strong, nonatomic) IBOutlet UIImageView *imgError;
+@property (strong, nonatomic) IBOutlet UIView *contMsgErrorView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightContError;
 @end

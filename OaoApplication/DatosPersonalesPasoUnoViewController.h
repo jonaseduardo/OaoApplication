@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "SolicitudTarjetaDatosPersonalesViewController.h"
+#import "BBVAPickerButtonView.h"
 
-@interface DatosPersonalesPasoUnoViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate>
+
+@interface DatosPersonalesPasoUnoViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate, protocolPickerButtonViewDelegate>
 
 @property (strong, nonatomic) id <protocolDatosPersonales> delegateProtocolDatosPersonales;
 
 + (DatosPersonalesPasoUnoViewController *)getVcId;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *firstPickerViewConstraintToTopView;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *viewHeight;
 @property (strong, nonatomic) IBOutlet UIView *contCuil;

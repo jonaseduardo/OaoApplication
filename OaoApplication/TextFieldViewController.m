@@ -12,6 +12,7 @@
 @interface TextFieldViewController ()
 {
     UIView *bottomBarRed;
+    UIView *bt;
 }
 @property(strong,nonatomic) NSNumber *typeKeyboard;
 
@@ -26,13 +27,18 @@
     self.view.translatesAutoresizingMaskIntoConstraints = NO;
     
     [self addSubview:self.view toView:parentView];
-    [_headerText setText:text];
-    
+
     [_closeButton addTarget:self action:@selector(BorrarActionBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     self.closeButton.hidden = YES;
     self.textField.hidden = YES;
-    [self.headerText setFrame:CGRectMake(20, 20, parentView.frame.size.width - 40, 20)];
+    
+    self.headerText.adjustsFontSizeToFitWidth = YES;
+    self.headerText.minimumScaleFactor = 12.0f / self.headerText.font.pointSize;
+    [self.headerText setFrame:CGRectMake(20, 20,parentView.frame.size.width - 40, 20)];
+    
+    [_headerText setText:text];
+    
     if([keyboard intValue] == 0)
       {
           [self.textField setKeyboardType:UIKeyboardTypeNumberPad];
@@ -42,6 +48,7 @@
         [self.textField setKeyboardType:UIKeyboardTypeAlphabet];
     }
     _typeKeyboard = keyboard;
+    
     return self;
 }
 
@@ -121,15 +128,30 @@
     
 }
 -(void)ShowError{
-    bottomBarRed =  [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 2, self.view.frame.size.width, 2)];
+    bottomBarRed =  [[UIView alloc] initWithFrame:CGRectMake(0, self.contTextFieldView.frame.size.height - 2, self.view.frame.size.width, 2)];
     bottomBarRed.backgroundColor = [UIColor OaoColor_RedDark];
     [self.view addSubview:bottomBarRed];
     self.headerText.textColor = [UIColor OaoColor_RedDark];
-    self.view.backgroundColor = [[UIColor OaoColor_RedDark] colorWithAlphaComponent:0.1f];
+    self.contTextFieldView.backgroundColor = [[UIColor OaoColor_RedDark] colorWithAlphaComponent:0.1f];
+    self.lblDescripcionError.hidden = NO;
+    self.imgError.hidden = NO;
 }
 -(void)HideError{
-    [bottomBarRed removeFromSuperview];
+    bottomBarRed.backgroundColor = [UIColor OaoColor_GrayBackground];
     self.headerText.textColor = [UIColor OaoColor_GrayText];
-    self.view.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.contTextFieldView.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblDescripcionError.hidden = YES;
+    self.imgError.hidden = YES
+    ;
+}
+-(Boolean)validarCampo{
+    if([self.textField.text isEqualToString:@""])
+    {
+        [self ShowError];
+        return FALSE;
+    }
+    else{
+        return TRUE;
+    }
 }
 @end

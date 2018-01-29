@@ -17,6 +17,7 @@
                 <outlet property="contNumeroHeight" destination="VEv-dS-KVJ" id="UZq-L5-z5X"/>
                 <outlet property="contSecondPickerView" destination="OE2-4h-ZjE" id="eHk-lG-2Er"/>
                 <outlet property="firstContPickerViewHeight" destination="Cp8-yx-PFK" id="5ZT-Ap-k97"/>
+                <outlet property="firstPickerViewConstraintToTopView" destination="SH4-vW-aZN" id="IdA-rt-AWw"/>
                 <outlet property="lblCuil" destination="Gyj-wh-eOn" id="dWh-y4-YXP"/>
                 <outlet property="lblCuit" destination="II9-gc-OJr" id="EAd-1i-asb"/>
                 <outlet property="scrollBottomConstraint" destination="Ojv-iJ-5fh" id="rYp-dX-8o8"/>
@@ -101,14 +102,14 @@
                                 <constraint firstItem="OHm-qF-TaL" firstAttribute="leading" secondItem="R8h-Ka-bWa" secondAttribute="leading" constant="20" id="vwe-Ex-E72"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaA-f3-5C0">
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaA-f3-5C0">
                             <rect key="frame" x="30" y="249" width="315" height="60"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="Cp8-yx-PFK"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OE2-4h-ZjE">
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OE2-4h-ZjE">
                             <rect key="frame" x="30" y="329" width="315" height="60"/>
                             <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
