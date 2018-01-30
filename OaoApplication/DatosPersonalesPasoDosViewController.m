@@ -82,16 +82,16 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    
     //creo textfieldNumberDocument
     _documentNumber = [[TextFieldViewController alloc]initComponentDateToParentView:_contNumberDocument andHeaderText:@"Numero de documento de tu pareja" typeKeyBoard:[NSNumber numberWithInt:0]];
     
     _documentNumber.delegateProtocolTextField = self;
-    
+
     //creo textfieldNumberDocument
     _nombreParejaTextField = [[TextFieldViewController alloc]initComponentDateToParentView:_contNombrePareja andHeaderText:@"Nombre completo de tu pareja" typeKeyBoard:[NSNumber numberWithInt:1]];
     
     _nombreParejaTextField.delegateProtocolTextField = self;
-
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

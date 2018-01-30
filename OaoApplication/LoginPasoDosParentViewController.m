@@ -10,9 +10,13 @@
 #import "LoginPasoDosView.h"
 #import "LoginPasoTresView.h"
 #import "UIColor+WalletColors.h"
+#import "LoginViewController.h"
 
 @interface LoginPasoDosParentViewController ()
-
+{
+    NSNumber *index;
+}
+@property(strong,nonatomic)LoginViewController *LoginViewController;
 @property (strong, nonatomic) LoginPasoDosView *LoginPasoDosViewController;
 @property (strong, nonatomic) LoginPasoTresView *LoginPasoTresViewController;
 @property (strong, nonatomic) UIViewController *currentViewController;
@@ -25,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     self.navBar.backgroundColor = [UIColor whiteColor];
     [self initialConfigurationViewsControllers];
     [self primeraCarga];
@@ -55,16 +59,30 @@
 }
 -(void)volver{
     
-    if(_currentViewController == _LoginPasoDosViewController)
-      {
-        CATransition *transition = [[CATransition alloc] init];
+    NSNumber *savedValue = [[NSUserDefaults standardUserDefaults]
+                            objectForKey:@"tipoUser"];
+    index = 0;
+    if([savedValue intValue] == 1 && _currentViewController == _LoginPasoDosViewController)
+        {
+          UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+          
+          LoginViewController * login = [story instantiateViewControllerWithIdentifier:@"initLogin"];
+          
+          UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:login];
+          
+          [self presentViewController:nvc animated:NO completion:nil];
+        }
+    else if(_currentViewController == _LoginPasoDosViewController)
+        {
+          CATransition *transition = [[CATransition alloc] init];
           transition.duration = 0.3;
           transition.type = kCATransitionPush;
           transition.subtype = kCATransitionFromLeft;
           [transition setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
           [self.view.window.layer addAnimation:transition forKey:kCATransition];
+          
           [self dismissViewControllerAnimated:NO completion:nil];
-      }
+        }
     if(_currentViewController == _LoginPasoTresViewController)
         {
             [self transitionToViewController:[self returnViewLoginPasoDos]];

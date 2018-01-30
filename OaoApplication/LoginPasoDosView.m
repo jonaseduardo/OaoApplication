@@ -70,6 +70,9 @@
                                       action:@selector(pickLastName)];
     [self.contLastName addGestureRecognizer:tapLastName];
 }
+-(void)viewDidAppear:(BOOL)animated{
+   
+}
 -(void)volver{
     //[_delegateProtocolLogin setClose];
     /*[_delegateProtocolLogin transitionToViewController:[_delegateProtocolLogin returnViewLoginPasoUno]];*/

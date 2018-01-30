@@ -49,11 +49,18 @@
     }
     _typeKeyboard = keyboard;
     
+    UITapGestureRecognizer *tapMsgError = [[UITapGestureRecognizer alloc]
+                                        initWithTarget:self
+                                        action:@selector(pickError)];
+    [self.contMsgErrorView addGestureRecognizer:tapMsgError ];
+    
     return self;
 }
 
 
-
+-(void)pickError{
+    [self dismissKeyBoard];
+}
 
 - (void)addSubview:(UIView *)subView toView:(UIView*)parentView {
     [parentView addSubview:subView];

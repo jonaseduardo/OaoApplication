@@ -8,6 +8,7 @@
 
 #import "SalirModalViewController.h"
 #import "LoginViewController.h"
+#import "LoginPasoDosParentViewController.h"
 
 @interface SalirModalViewController ()
 {
@@ -42,7 +43,7 @@
     if([_tipoUs intValue] ==  UserDniExtranjeroTres){
         UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         
-        LoginViewController * login = [story instantiateViewControllerWithIdentifier:@"initLoginPasoDos"];
+        LoginPasoDosParentViewController * login = [story instantiateViewControllerWithIdentifier:@"initLoginPasoDos"];
         
         UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:login];
         
