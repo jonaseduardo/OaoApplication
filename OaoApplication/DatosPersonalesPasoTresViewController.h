@@ -25,5 +25,9 @@
 @property (strong, nonatomic) IBOutlet UIView *contOpcion2;
 @property (strong, nonatomic) IBOutlet UIView *contOpcion3;
 @property (strong, nonatomic) IBOutlet UIView *contOpcion4;
+@property (strong, nonatomic) IBOutlet UILabel *lblOpcion1;
+@property (strong, nonatomic) IBOutlet UILabel *lblOpcion2;
+@property (strong, nonatomic) IBOutlet UILabel *lblOpcion3;
+@property (strong, nonatomic) IBOutlet UILabel *lblOpcion4;
 
 @end

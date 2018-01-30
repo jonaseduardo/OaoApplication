@@ -50,7 +50,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQo-Q8-wYq">
-                            <rect key="frame" x="30" y="148" width="315" height="100"/>
+                            <rect key="frame" x="30" y="168" width="315" height="100"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de documento de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pn-VD-XP0">
                                     <rect key="frame" x="27" y="15" width="260" height="30"/>
@@ -69,7 +69,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNk-oR-mDF">
-                            <rect key="frame" x="30" y="250" width="315" height="100"/>
+                            <rect key="frame" x="30" y="270" width="315" height="100"/>
                             <subviews>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre completo de tu pareja" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-Q7-aw0">
                                     <rect key="frame" x="27" y="15" width="260" height="30"/>
@@ -101,7 +101,7 @@
                         <constraint firstItem="DN9-92-T9S" firstAttribute="top" secondItem="ryH-wF-L1I" secondAttribute="top" id="bRl-IR-z6Q"/>
                         <constraint firstItem="p3j-G7-e8X" firstAttribute="top" secondItem="DN9-92-T9S" secondAttribute="bottom" constant="20" id="eol-we-V1F"/>
                         <constraint firstAttribute="bottom" secondItem="sNk-oR-mDF" secondAttribute="bottom" constant="187" id="m8D-Pl-6hN"/>
-                        <constraint firstItem="qQo-Q8-wYq" firstAttribute="top" secondItem="lCK-yB-AFa" secondAttribute="bottom" constant="20" id="mFa-y3-Ssh"/>
+                        <constraint firstItem="qQo-Q8-wYq" firstAttribute="top" secondItem="lCK-yB-AFa" secondAttribute="bottom" constant="40" id="mFa-y3-Ssh"/>
                         <constraint firstItem="DN9-92-T9S" firstAttribute="centerX" secondItem="ryH-wF-L1I" secondAttribute="centerX" id="nV1-dM-Xu4"/>
                         <constraint firstItem="qQo-Q8-wYq" firstAttribute="leading" secondItem="sNk-oR-mDF" secondAttribute="leading" id="qKT-W4-MLr"/>
                         <constraint firstItem="lCK-yB-AFa" firstAttribute="leading" secondItem="qQo-Q8-wYq" secondAttribute="leading" id="vWM-6D-By4"/>

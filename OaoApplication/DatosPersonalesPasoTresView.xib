@@ -17,6 +17,10 @@
                 <outlet property="contOpcion3" destination="1JJ-lM-Z45" id="cVR-hY-da0"/>
                 <outlet property="contOpcion4" destination="46G-49-3Nz" id="V2r-yg-IOk"/>
                 <outlet property="contSecondPickerView" destination="voJ-Dy-MyM" id="7lh-sE-g84"/>
+                <outlet property="lblOpcion1" destination="POZ-Nj-DMF" id="2E6-r2-dUd"/>
+                <outlet property="lblOpcion2" destination="zAq-ty-0xW" id="Kf9-jP-0ZZ"/>
+                <outlet property="lblOpcion3" destination="B19-P2-qkI" id="81C-vq-Jgx"/>
+                <outlet property="lblOpcion4" destination="Eg8-x4-uDh" id="6DG-hg-0a9"/>
                 <outlet property="scrollBottomConstraint" destination="bch-V8-3qv" id="LQb-BG-xb7"/>
                 <outlet property="scrollView" destination="jaX-nC-cTK" id="UCJ-bG-qey"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qgG-nH-yP9"/>

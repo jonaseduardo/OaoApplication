@@ -8,6 +8,7 @@
 
 #import "DatosPersonalesPasoTresViewController.h"
 #import "OptionPickerViewController.h"
+#import "UIColor+WalletColors.h"
 
 @interface DatosPersonalesPasoTresViewController ()<OptionPickerDelegate>
 {
@@ -36,6 +37,31 @@
 @end
 
 @implementation DatosPersonalesPasoTresViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    
+    
+    UITapGestureRecognizer *tapOpcion1 = [[UITapGestureRecognizer alloc]
+                                    initWithTarget:self
+                                    action:@selector(pickOpcionUno)];
+    [self.contOpcion1 addGestureRecognizer:tapOpcion1 ];
+    
+    UITapGestureRecognizer *tapOpcion2 = [[UITapGestureRecognizer alloc]
+                                          initWithTarget:self
+                                          action:@selector(pickOpcionDos)];
+    [self.contOpcion2 addGestureRecognizer:tapOpcion2 ];
+    
+    UITapGestureRecognizer *tapOpcion3 = [[UITapGestureRecognizer alloc]
+                                          initWithTarget:self
+                                          action:@selector(pickOpcionTres)];
+    [self.contOpcion3 addGestureRecognizer:tapOpcion3 ];
+    
+    UITapGestureRecognizer *tapOpcion4 = [[UITapGestureRecognizer alloc]
+                                          initWithTarget:self
+                                          action:@selector(pickOpcionCuatro)];
+    [self.contOpcion4 addGestureRecognizer:tapOpcion4 ];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,6 +93,51 @@
     // Dispose of any resources that can be recreated.
 }
 //CUSTOM METHODS
+-(void)pickOpcionUno{
+    
+    self.contOpcion2.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion2.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion3.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion3.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion4.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion4.textColor = [UIColor OaoColor_GrayText];
+
+    self.contOpcion1.backgroundColor = [UIColor OaoColor_Bluish];
+    self.lblOpcion1.textColor = [UIColor whiteColor];
+}
+-(void)pickOpcionDos{
+    self.contOpcion1.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion1.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion3.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion3.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion4.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion4.textColor = [UIColor OaoColor_GrayText];
+    
+    self.contOpcion2.backgroundColor = [UIColor OaoColor_Bluish];
+    self.lblOpcion2.textColor = [UIColor whiteColor];
+}
+-(void)pickOpcionTres{
+    self.contOpcion1.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion1.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion2.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion2.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion4.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion4.textColor = [UIColor OaoColor_GrayText];
+    
+    self.contOpcion3.backgroundColor = [UIColor OaoColor_Bluish];
+    self.lblOpcion3.textColor = [UIColor whiteColor];
+}
+-(void)pickOpcionCuatro{
+    self.contOpcion1.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion1.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion2.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion2.textColor = [UIColor OaoColor_GrayText];
+    self.contOpcion3.backgroundColor = [UIColor OaoColor_GrayBackground];
+    self.lblOpcion3.textColor = [UIColor OaoColor_GrayText];
+    
+    self.contOpcion4.backgroundColor = [UIColor OaoColor_Bluish];
+    self.lblOpcion4.textColor = [UIColor whiteColor];
+}
 + (DatosPersonalesPasoTresViewController * )getVcId {
     return [[DatosPersonalesPasoTresViewController alloc] initWithNibName:@"DatosPersonalesPasoTresView" bundle:[NSBundle mainBundle]];
 }

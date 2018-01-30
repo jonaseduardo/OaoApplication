@@ -15,6 +15,9 @@
 
 @interface SolicitudTarjetaDatosPersonalesViewController ()
 
+{
+    NSNumber *index;
+}
 @property (strong, nonatomic) DatosPersonalesPasoUnoViewController *datosPersonalesPasoUno;
 @property (strong, nonatomic) DatosPersonalesPasoDosViewController *datosPersonalesPasoDos;
 @property (strong, nonatomic) DatosPersonalesPasoTresViewController *datosPersonalesPasoTres;
@@ -118,9 +121,17 @@
     if(_currentViewController == _datosPersonalesPasoDos){
         [self transitionToViewController:[self returnViewDatosPersonalesPasoUno]];
     }
-    if(_currentViewController == _datosPersonalesPasoTres) {
-        [self transitionToViewController:[self returnViewDatosPersonalesPasoDos]];
-    }
+    NSNumber *savedValue = [[NSUserDefaults standardUserDefaults]
+                            objectForKey:@"estadoCivil"];
+    index = 0;
+    if([savedValue intValue] == 0 && _currentViewController == _datosPersonalesPasoTres)
+        {
+            [self transitionToViewController:[self returnViewDatosPersonalesPasoUno]];
+        }
+    else if(_currentViewController == _datosPersonalesPasoTres)
+        {
+            [self transitionToViewController:[self returnViewDatosPersonalesPasoDos]];
+        }
 }
 
 -(void)salir{

@@ -63,8 +63,8 @@
     self.options = @[@"Opcion 1",@"Opcion 2"];
     self.initiallySelectedOptions = @[@"Opcion 1"];
     
-    self.optionsEstadoCivil = @[@"Opcion 1",@"Opcion 2"];
-    self.initiallySelectedOptionsEstadoCivil = @[@"Opcion 1"];
+    self.optionsEstadoCivil = @[@"CASADO",@"SOLTERO"];
+    self.initiallySelectedOptionsEstadoCivil = @[@"CASADO"];
     
     //Crea el picker view de documentos
     _condicionIvaPickerBtnView = [[BBVAPickerButtonView alloc] initWithFrame:CGRectMake(0, 0, _contFirstPickerView.frame.size.width, _contFirstPickerView.frame.size.height)];
@@ -166,7 +166,17 @@
 
 //CUSTOM METHODS
 - (IBAction)btnSiguienteTapped:(id)sender {
-    [_delegateProtocolDatosPersonales transitionToViewController:[_delegateProtocolDatosPersonales returnViewDatosPersonalesPasoDos]];
+    NSNumber *savedValue = [[NSUserDefaults standardUserDefaults]
+                            objectForKey:@"estadoCivil"];
+    index = 0;
+    if([savedValue intValue] == 1)
+        {
+            //CASADO;
+            [_delegateProtocolDatosPersonales transitionToViewController:[_delegateProtocolDatosPersonales returnViewDatosPersonalesPasoDos]];
+        }
+    else{
+            [_delegateProtocolDatosPersonales transitionToViewController:[_delegateProtocolDatosPersonales returnViewDatosPersonalesPasoTres]];
+        }
 }
 -(void)pickCuit{
     self.firstContPickerViewHeight.constant = 60;
@@ -281,12 +291,24 @@
     if(sender == optionPickerViewController){
         _condicionIvaPickerBtnView.label.text = option;
         _condicionIvaPickerBtnView.label.hidden = NO;
+        self.initiallySelectedOptions = @[option];
     }
     if(sender == optionPickerViewControllerEstadoCivil){
         _estadoCivilPickerBtnView.label.text = option;
         _estadoCivilPickerBtnView.label.hidden = NO;
+        self.initiallySelectedOptionsEstadoCivil = @[option];
     }
-
-    self.initiallySelectedOptions = @[option];
+    if([option isEqualToString:@"CASADO"]){
+        
+        index = [NSNumber numberWithInt:1];
+    }
+    else{
+        index = [NSNumber numberWithInt:0];
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:index forKey:@"estadoCivil"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
 }
 @end
