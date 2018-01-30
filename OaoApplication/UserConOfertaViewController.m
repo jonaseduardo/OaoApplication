@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     self.solicitarTarjetaBtn.backgroundColor = [UIColor OaoColor_DarkishBlue];
     self.imageFrontRect = self.imageFront.frame;
     
@@ -37,7 +38,8 @@
     
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    self.beneficios = @[@"Gratis", @"$50.000", @"Beneficios",@"Acumula Millas"];
+   
+    self.beneficios = @[@"Gratis", @"$50.000", @"Beneficios",@"Acumula Millas",@"Gratis",@"Beneficios",@"50.000"];
     if(self.beneficios.count > 4 ){
         //si no es un entero, va a haber un scroll
         _collectionViewHeight.constant =(self.beneficios.count/2) * ( 59+10);
@@ -50,6 +52,9 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.imageFront.frame = CGRectMake((self.containerBlue.frame.size.width - self.imageFrontRect.size.width) / 2.0, CGRectGetMaxY(self.lblOferta.frame) + 20, self.imageFrontRect.size.width, self.imageFrontRect.size.height);
+    CGFloat height = _collectionView.collectionViewLayout.collectionViewContentSize.height;
+    _collectionViewHeight.constant = height;
+    [self.view setNeedsLayout];
     
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -67,7 +72,7 @@
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake((self.collectionView.frame.size.width/2)-10, 59);
+    return CGSizeMake((self.collectionView.frame.size.width/2)-10,59);
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -99,6 +104,7 @@
     NSString *selected = [self.beneficios objectAtIndex:indexPath.row];
     NSLog(@"selected=%@", selected);
 }
+
 //CUSTOM ACTIONS
 
 - (IBAction)solicitarTarjetaBtnTapped:(id)sender {

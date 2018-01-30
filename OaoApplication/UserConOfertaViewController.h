@@ -10,7 +10,7 @@
 #import "UsuarioLogeadoViewController.h"
 #import "DiagonalView.h"
 
-@interface UserConOfertaViewController : UIViewController<protocolUserLogged,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface UserConOfertaViewController : UIViewController<protocolUserLogged,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) id <protocolUserLogged> delegateProtocolUserLogged;
 
