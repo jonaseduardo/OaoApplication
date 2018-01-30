@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PasosTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PasosTableViewCell" rowHeight="104" id="WU6-KW-Se7" customClass="PasosTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WU6-KW-Se7" id="J9F-AO-Mnj">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="79i-qI-IFq">
+                        <rect key="frame" x="8" y="8" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="Eot-Wp-bcN"/>
+                            <constraint firstAttribute="width" constant="26" id="w7G-Ch-297"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asegurate de tener buena conexión durante todo el proceso. Te recomendamos usar WiFi o 4G." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jR-vZ-UN2">
+                        <rect key="frame" x="44" y="8" width="323" height="88"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8jR-vZ-UN2" firstAttribute="leading" secondItem="79i-qI-IFq" secondAttribute="trailing" constant="10" id="5uE-xW-cFw"/>
+                    <constraint firstAttribute="trailing" secondItem="8jR-vZ-UN2" secondAttribute="trailing" constant="8" id="7ak-zF-x6T"/>
+                    <constraint firstItem="79i-qI-IFq" firstAttribute="leading" secondItem="J9F-AO-Mnj" secondAttribute="leadingMargin" id="9v7-bj-8kq"/>
+                    <constraint firstAttribute="bottom" secondItem="8jR-vZ-UN2" secondAttribute="bottom" constant="7.5" id="QKS-AJ-pb9"/>
+                    <constraint firstItem="79i-qI-IFq" firstAttribute="top" secondItem="J9F-AO-Mnj" secondAttribute="topMargin" id="RXf-2V-NPS"/>
+                    <constraint firstItem="8jR-vZ-UN2" firstAttribute="top" secondItem="J9F-AO-Mnj" secondAttribute="top" constant="8" id="wci-Sl-8FU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="79i-qI-IFq" id="oYk-jf-J7O"/>
+                <outlet property="title" destination="8jR-vZ-UN2" id="FEQ-Kh-e3W"/>
+            </connections>
+            <point key="canvasLocation" x="-294.5" y="27"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" width="26" height="26"/>
+    </resources>
+</document>

@@ -10,8 +10,11 @@
 #import "SolicitudTarjetaViewController.h"
 #import "UIColor+WalletColors.h"
 #import "LoginViewController.h"
+#import "PasosTableViewCell.h"
 
 @interface ComenzarSolicitudTarjetaViewController ()
+
+@property (strong, nonatomic) NSArray *pasos;
 
 @end
 
@@ -20,6 +23,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.myTableView.estimatedRowHeight = 20.0;
+    
+    [self.myTableView setNeedsLayout];
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
+     [_myTableView registerNib:[UINib nibWithNibName:@"PasosTableViewCell" bundle:[NSBundle mainBundle] ] forCellReuseIdentifier:@"PasosTableViewCell"];
+    
+    self.pasos = @[@"Asegurate de tener buena conexión durante todo el proceso. Te recomendamos usar WiFi o 4G.", @"Tené a mano tu documento. Te vamos a pedir que le saques una foto al frente y al dorso.", @"Como medida de seguridad para resguardar tu identidad vamos a pedirte que te saques una selfie.", @"Como medida de seguridad para resguardar tu identidad vamos a pedirte que te saques una selfie.", @"Como medida de "];
+    
     self.tiempoProceso.backgroundColor = [[UIColor colorWithRed:90.0f/255.0f green:190.0f/255.0f blue:255.0f/255.0f alpha:1.0] colorWithAlphaComponent:0.1f];
     
      //self.viewTiempoProceso.backgroundColor = [UIColor colorWithRed:90.0f/255.0f green:190.0f/255.0f blue:255.0f/255.0f alpha:0.1f];
@@ -35,7 +48,9 @@
     self.automaticallyAdjustsScrollViewInsets = false; 
 }
 -(void)viewDidAppear:(BOOL)animated{
-    
+    CGFloat height = _myTableView.contentSize.height+15;
+    _heightMyTableView.constant = height;
+    [self.view setNeedsLayout];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -62,4 +77,31 @@
     
     [self presentViewController:nvc animated:NO completion:nil];
 }
+#pragma TableView
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_pasos count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    PasosTableViewCell *cell = nil;
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:@"PasosTableViewCell" forIndexPath:indexPath];
+    if (!cell)
+    {
+        cell = [[PasosTableViewCell alloc] init];
+    }
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    //[tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    
+    cell.title.text = [_pasos objectAtIndex:indexPath.row];
+    
+    return cell;
+    
+}
+
 @end

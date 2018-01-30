@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ComenzarSolicitudTarjetaViewController : UIViewController
+@interface ComenzarSolicitudTarjetaViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 - (IBAction)btnComenzarSolicitudTapped:(id)sender;
 @property (strong, nonatomic) IBOutlet UIView *viewTiempoProceso;
 @property (strong, nonatomic) IBOutlet UILabel *tiempoProceso;
+@property (strong, nonatomic) IBOutlet UITableView *myTableView;
 
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightMyTableView;
 @end

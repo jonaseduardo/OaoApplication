@@ -11,6 +11,8 @@
 		E9462E3C2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9462E3B2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m */; };
 		E9462E3E2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9462E3D2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib */; };
 		E9631D9B2020C21200C6C1A4 /* DiagonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9631D992020C21200C6C1A4 /* DiagonalView.m */; };
+		E9631DA02020EBE000C6C1A4 /* PasosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9631D9F2020EBE000C6C1A4 /* PasosTableViewCell.m */; };
+		E9631DA22020ED1600C6C1A4 /* PasosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9631DA12020ED1600C6C1A4 /* PasosTableViewCell.xib */; };
 		E9655E95200F84F3000E96AE /* LoginPasoDosView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9655E94200F84F3000E96AE /* LoginPasoDosView.m */; };
 		E9655E97200F8813000E96AE /* LoginPasoDosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9655E96200F8813000E96AE /* LoginPasoDosView.xib */; };
 		E9655E9A200FA122000E96AE /* LoginPasoTresView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9655E99200FA122000E96AE /* LoginPasoTresView.m */; };
@@ -90,6 +92,9 @@
 		E9462E3D2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatosPersonalesPasoUnoView.xib; sourceTree = "<group>"; };
 		E9631D992020C21200C6C1A4 /* DiagonalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagonalView.m; sourceTree = "<group>"; };
 		E9631D9A2020C21200C6C1A4 /* DiagonalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiagonalView.h; sourceTree = "<group>"; };
+		E9631D9E2020EBE000C6C1A4 /* PasosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasosTableViewCell.h; sourceTree = "<group>"; };
+		E9631D9F2020EBE000C6C1A4 /* PasosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasosTableViewCell.m; sourceTree = "<group>"; };
+		E9631DA12020ED1600C6C1A4 /* PasosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasosTableViewCell.xib; sourceTree = "<group>"; };
 		E9655E93200F84F3000E96AE /* LoginPasoDosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPasoDosView.h; sourceTree = "<group>"; };
 		E9655E94200F84F3000E96AE /* LoginPasoDosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPasoDosView.m; sourceTree = "<group>"; };
 		E9655E96200F8813000E96AE /* LoginPasoDosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPasoDosView.xib; sourceTree = "<group>"; };
@@ -212,6 +217,16 @@
 			name = DiagonalView;
 			sourceTree = "<group>";
 		};
+		E9631D9D2020EB9200C6C1A4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E9631D9E2020EBE000C6C1A4 /* PasosTableViewCell.h */,
+				E9631D9F2020EBE000C6C1A4 /* PasosTableViewCell.m */,
+				E9631DA12020ED1600C6C1A4 /* PasosTableViewCell.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
 		E9B553C9200E4D310038E5DB = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +333,7 @@
 		E9B55412200E59AE0038E5DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9631D9D2020EB9200C6C1A4 /* TableViewCell */,
 				E9631D9C2020C22F00C6C1A4 /* DiagonalView */,
 				E9FE1706201B93160092EB54 /* ComponentTextField */,
 				E9FE1705201B7A750092EB54 /* ComponentOptionPicker */,
@@ -556,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9EBC917201A6C7700DB2F7F /* OptionPickerViewController.xib in Resources */,
+				E9631DA22020ED1600C6C1A4 /* PasosTableViewCell.xib in Resources */,
 				E9B553E5200E4D310038E5DB /* LaunchScreen.storyboard in Resources */,
 				E9B553E2200E4D310038E5DB /* Assets.xcassets in Resources */,
 				E9EBC90A201A23A800DB2F7F /* ComponentDateView.xib in Resources */,
@@ -627,6 +644,7 @@
 				E9655E9A200FA122000E96AE /* LoginPasoTresView.m in Sources */,
 				E9B5540E200E524E0038E5DB /* LoginViewController.m in Sources */,
 				E9EBC926201A8CA400DB2F7F /* Documento.m in Sources */,
+				E9631DA02020EBE000C6C1A4 /* PasosTableViewCell.m in Sources */,
 				E9EBC927201A8CA400DB2F7F /* UIImage+WalletBundle.m in Sources */,
 				E9F689A420178BE4002E2556 /* ComenzarSolicitudTarjetaViewController.m in Sources */,
 				E9DD7136201625600007173E /* BeneficiosCollectionViewCell.m in Sources */,

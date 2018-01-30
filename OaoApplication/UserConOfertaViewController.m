@@ -52,6 +52,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.imageFront.frame = CGRectMake((self.containerBlue.frame.size.width - self.imageFrontRect.size.width) / 2.0, CGRectGetMaxY(self.lblOferta.frame) + 20, self.imageFrontRect.size.width, self.imageFrontRect.size.height);
+    
     CGFloat height = _collectionView.collectionViewLayout.collectionViewContentSize.height;
     _collectionViewHeight.constant = height;
     [self.view setNeedsLayout];
