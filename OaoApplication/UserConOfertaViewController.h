@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "UsuarioLogeadoViewController.h"
+#import "DiagonalView.h"
 
 @interface UserConOfertaViewController : UIViewController<protocolUserLogged,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (strong, nonatomic) id <protocolUserLogged> delegateProtocolUserLogged;
 
 + (UserConOfertaViewController *)getVcId;
-@property (strong, nonatomic) IBOutlet UIView *containerBlue;
+@property (strong, nonatomic) IBOutlet DiagonalView *containerBlue;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) IBOutlet UIImageView *imageFront;
 @property (strong, nonatomic) IBOutlet UILabel *lblOferta;

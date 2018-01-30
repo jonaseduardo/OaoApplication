@@ -294,13 +294,13 @@
     if(sender == optionPickerViewController){
         _paisNacimientoPickerBtnView.label.text = option;
         _paisNacimientoPickerBtnView.label.hidden = NO;
+        self.initiallySelectedOptions = @[option];
     }
     if(sender == optionPickerViewControllerNac){
         _nacionalidadPickerBtnView.label.text = option;
         _nacionalidadPickerBtnView.label.hidden = NO;
+        self.initiallySelectedOptionsNac = @[option];
     }
-    self.initiallySelectedOptions = @[option];
-    
 }
 + (LoginPasoTresView * )getVcId {
     return [[LoginPasoTresView alloc] initWithNibName:@"LoginPasoTresView" bundle:[NSBundle mainBundle]];

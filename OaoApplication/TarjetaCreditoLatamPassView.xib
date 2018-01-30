@@ -30,8 +30,8 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vB3-bw-fOm">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-la-ztm">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-la-ztm" customClass="DiagonalView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarjeta de credito Visa Latam Pass" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fai-EF-k8d">
                                     <rect key="frame" x="27" y="8" width="320" height="19.5"/>
@@ -46,11 +46,11 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.13725490196078433" green="0.47843137254901957" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="shr-Kr-gqU" firstAttribute="top" secondItem="Fai-EF-k8d" secondAttribute="bottom" constant="8" symbolic="YES" id="8sH-t7-zLr"/>
                                 <constraint firstItem="Fai-EF-k8d" firstAttribute="leading" secondItem="VI9-la-ztm" secondAttribute="leading" constant="27" id="BNW-aX-Yno"/>
-                                <constraint firstAttribute="height" constant="260" id="G7h-fJ-6VS"/>
+                                <constraint firstAttribute="height" constant="200" id="G7h-fJ-6VS"/>
                                 <constraint firstItem="Fai-EF-k8d" firstAttribute="leading" secondItem="shr-Kr-gqU" secondAttribute="leading" id="PRS-3V-rab"/>
                                 <constraint firstItem="Fai-EF-k8d" firstAttribute="centerX" secondItem="VI9-la-ztm" secondAttribute="centerX" id="Z2l-HF-mlg"/>
                                 <constraint firstItem="shr-Kr-gqU" firstAttribute="trailing" secondItem="VI9-la-ztm" secondAttribute="trailingMargin" id="omK-RN-iCn"/>
@@ -62,14 +62,14 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBlue" translatesAutoresizingMaskIntoConstraints="NO" id="6pX-fv-wjl">
-                            <rect key="frame" x="24" y="449" width="55" height="34"/>
+                            <rect key="frame" x="24" y="426" width="55" height="34"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="34" id="JD6-mE-bkE"/>
                                 <constraint firstAttribute="width" constant="55" id="JeL-IA-ih3"/>
                             </constraints>
                         </imageView>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ocs-FF-zyE">
-                            <rect key="frame" x="25" y="273" width="327" height="151"/>
+                            <rect key="frame" x="25" y="250" width="327" height="151"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="151" id="FCS-cm-0Be"/>
@@ -82,7 +82,7 @@
                             </collectionViewFlowLayout>
                         </collectionView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te damos una versión virtual de tu tarjeta para comprar online ahora." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1M-Pl-x6z">
-                            <rect key="frame" x="94" y="452" width="258" height="29"/>
+                            <rect key="frame" x="94" y="429" width="258" height="29"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                             <color key="textColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
                         <constraint firstItem="VI9-la-ztm" firstAttribute="top" secondItem="vB3-bw-fOm" secondAttribute="top" id="fGh-WB-6rb"/>
                         <constraint firstItem="6pX-fv-wjl" firstAttribute="top" secondItem="ocs-FF-zyE" secondAttribute="bottom" constant="25" id="g0Z-3h-bgU"/>
                         <constraint firstAttribute="trailing" secondItem="y1M-Pl-x6z" secondAttribute="trailing" constant="23" id="nPN-eQ-lLV"/>
-                        <constraint firstItem="ocs-FF-zyE" firstAttribute="top" secondItem="VI9-la-ztm" secondAttribute="bottom" constant="13" id="pFL-X9-7ha"/>
+                        <constraint firstItem="ocs-FF-zyE" firstAttribute="top" secondItem="VI9-la-ztm" secondAttribute="bottom" constant="50" id="pFL-X9-7ha"/>
                         <constraint firstItem="VI9-la-ztm" firstAttribute="leading" secondItem="vB3-bw-fOm" secondAttribute="leading" id="vzC-Yg-uL7"/>
                     </constraints>
                 </scrollView>

@@ -10,6 +10,7 @@
 		E9462E392018C36E0059FDEC /* SolicitudTarjetaDatosPersonalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9462E382018C36E0059FDEC /* SolicitudTarjetaDatosPersonalesViewController.m */; };
 		E9462E3C2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9462E3B2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m */; };
 		E9462E3E2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9462E3D2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib */; };
+		E9631D9B2020C21200C6C1A4 /* DiagonalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9631D992020C21200C6C1A4 /* DiagonalView.m */; };
 		E9655E95200F84F3000E96AE /* LoginPasoDosView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9655E94200F84F3000E96AE /* LoginPasoDosView.m */; };
 		E9655E97200F8813000E96AE /* LoginPasoDosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9655E96200F8813000E96AE /* LoginPasoDosView.xib */; };
 		E9655E9A200FA122000E96AE /* LoginPasoTresView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9655E99200FA122000E96AE /* LoginPasoTresView.m */; };
@@ -87,6 +88,8 @@
 		E9462E3A2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatosPersonalesPasoUnoViewController.h; sourceTree = "<group>"; };
 		E9462E3B2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatosPersonalesPasoUnoViewController.m; sourceTree = "<group>"; };
 		E9462E3D2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatosPersonalesPasoUnoView.xib; sourceTree = "<group>"; };
+		E9631D992020C21200C6C1A4 /* DiagonalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagonalView.m; sourceTree = "<group>"; };
+		E9631D9A2020C21200C6C1A4 /* DiagonalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiagonalView.h; sourceTree = "<group>"; };
 		E9655E93200F84F3000E96AE /* LoginPasoDosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPasoDosView.h; sourceTree = "<group>"; };
 		E9655E94200F84F3000E96AE /* LoginPasoDosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPasoDosView.m; sourceTree = "<group>"; };
 		E9655E96200F8813000E96AE /* LoginPasoDosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPasoDosView.xib; sourceTree = "<group>"; };
@@ -200,6 +203,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9631D9C2020C22F00C6C1A4 /* DiagonalView */ = {
+			isa = PBXGroup;
+			children = (
+				E9631D992020C21200C6C1A4 /* DiagonalView.m */,
+				E9631D9A2020C21200C6C1A4 /* DiagonalView.h */,
+			);
+			name = DiagonalView;
+			sourceTree = "<group>";
+		};
 		E9B553C9200E4D310038E5DB = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +318,7 @@
 		E9B55412200E59AE0038E5DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9631D9C2020C22F00C6C1A4 /* DiagonalView */,
 				E9FE1706201B93160092EB54 /* ComponentTextField */,
 				E9FE1705201B7A750092EB54 /* ComponentOptionPicker */,
 				E9EBC90B201A23C000DB2F7F /* ComponentDate */,
@@ -591,6 +604,7 @@
 				E9EBC8F9201A08A400DB2F7F /* DatosPersonalesPasoDosViewController.m in Sources */,
 				E9EBC8FE201A151B00DB2F7F /* DatosPersonalesPasoTresViewController.m in Sources */,
 				E9DD7139201669230007173E /* UsuarioLogeadoMensajeViewController.m in Sources */,
+				E9631D9B2020C21200C6C1A4 /* DiagonalView.m in Sources */,
 				E9E402D72010D95B007ADB12 /* SalirModalViewController.m in Sources */,
 				E9B5540A200E4EDC0038E5DB /* BaseParentStepsMultiplesViewsViewController.m in Sources */,
 				E9462E3C2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "BeneficiosCollectionViewCell.h"
 #import "UIColor+WalletColors.h"
 
+
 @interface UserConOfertaViewController ()
 
 @property (nonatomic, readwrite) CGRect imageFrontRect;
@@ -26,25 +27,12 @@
     self.imageFrontRect = self.imageFront.frame;
     
     // Do any additional setup after loading the view.
+   
+    self.containerBlue.fillColor = [UIColor OaoColor_Bluish];
+    self.containerBlue.lowerSide = [NSNumber numberWithFloat:0.85];
+    self.containerBlue.inverted = YES;
+    [self.containerBlue setNeedsDisplay];
     
-    CAShapeLayer *layer = [CAShapeLayer layer];
-    
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0, 220)]; // bottom left corner
-    [path addLineToPoint:CGPointMake(2000, 0)]; // top middle
-    [path addLineToPoint:CGPointMake(0, 0)]; // top right corner
-    [path addLineToPoint:CGPointMake(0, 100)]; // bottom right corner
-    [path addLineToPoint:CGPointMake(0, 10)];
-    [path closePath];
-    
-    layer.path = path.CGPath;
-    layer.fillColor = [UIColor blackColor].CGColor;
-    layer.strokeColor = nil;
-    
-    [_containerBlue.layer setMask:layer];
-    
-    self.imageFront.layer.zPosition = 1000;
-
     [self.collectionView registerNib:[UINib nibWithNibName:@"BeneficiosCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
     
     self.collectionView.delegate = self;

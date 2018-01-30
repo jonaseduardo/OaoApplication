@@ -219,13 +219,13 @@
     if(sender == optionPickerViewController){
         _actividadPickerBtnView.label.text = option;
         _actividadPickerBtnView.label.hidden = NO;
+        self.initiallySelectedOptions = @[option];
     }
     if(sender == optionPickerViewControllerOcupacion){
         _ocupacionPickerBtnView.label.text = option;
         _ocupacionPickerBtnView.label.hidden = NO;
+        self.initiallySelectedOptionsOcupacion = @[option];
     }
-    
-    self.initiallySelectedOptions = @[option];
 }
 -(void)nextBtnTapped:(id)sender{
     
