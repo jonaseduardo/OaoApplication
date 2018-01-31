@@ -10,11 +10,13 @@
 #import "SolicitudTarjetaDatosPersonalesViewController.h"
 #import "BBVAPickerButtonView.h"
 
-@interface DatosPersonalesPasoTresViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,protocolPickerButtonViewDelegate>
+@interface DatosPersonalesPasoTresViewController : UIViewController<UITextFieldDelegate,UIGestureRecognizerDelegate,protocolPickerButtonViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (strong, nonatomic) id <protocolDatosPersonales> delegateProtocolDatosPersonales;
 
 + (DatosPersonalesPasoTresViewController *)getVcId;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightCollectionView;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 - (IBAction)nextBtnTapped:(id)sender;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollBottomConstraint;

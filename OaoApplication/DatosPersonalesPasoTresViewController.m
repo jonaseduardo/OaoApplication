@@ -9,6 +9,7 @@
 #import "DatosPersonalesPasoTresViewController.h"
 #import "OptionPickerViewController.h"
 #import "UIColor+WalletColors.h"
+#import "IngresoNetoMensualCollectionViewCell.h"
 
 @interface DatosPersonalesPasoTresViewController ()<OptionPickerDelegate>
 {
@@ -23,6 +24,7 @@
     CGFloat keyboardHeight;
     int index;
 }
+@property (strong, nonatomic) NSArray *ingresos;
 
 @property (nonatomic,strong) BBVAPickerButtonView* actividadPickerBtnView;
 @property (nonatomic,strong) BBVAPickerButtonView* ocupacionPickerBtnView;
@@ -87,6 +89,20 @@
     _ocupacionPickerBtnView.lblTop.text = @"Ocupacion";
     _ocupacionPickerBtnView.delegatePicker = self;
     
+    [self.collectionView registerNib:[UINib nibWithNibName:@"IngresoNetoMensualCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
+    
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    _collectionView.allowsMultipleSelection = NO;
+    
+    self.ingresos = @[@"Menos de $10.000", @"$10.000 - $15.000", @"$15.000 - $25.000",@"Más de $25.000"];
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    CGFloat height = _collectionView.collectionViewLayout.collectionViewContentSize.height;
+    _heightCollectionView.constant = height;
+    [self.view setNeedsLayout];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -230,4 +246,55 @@
 -(void)nextBtnTapped:(id)sender{
     
 }
+#pragma UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.ingresos.count;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    return CGSizeMake((self.collectionView.frame.size.width/2)-10,60);
+    //return UICollectionViewFlowLayoutAutomaticSize;
+}
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    IngresoNetoMensualCollectionViewCell *cell = nil;
+    
+    cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
+    if(!cell)
+    {
+        cell = [[IngresoNetoMensualCollectionViewCell alloc]init];
+    }
+    // get the track
+    NSString *text = [self.ingresos objectAtIndex:indexPath.row];
+    
+    cell.lblIngresoNeto.text = text;
+    //cell.backgroundColor = [UIColor redColor];
+    
+    return cell;
+}
+#pragma UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *selected = [self.ingresos objectAtIndex:indexPath.row];
+    NSLog(@"selected=%@", selected);
+    IngresoNetoMensualCollectionViewCell *cell = nil;
+    
+    for(IngresoNetoMensualCollectionViewCell *c in collectionView.visibleCells)
+    {
+        if([collectionView indexPathForCell:c] == indexPath){
+            c.contentView.backgroundColor = [UIColor OaoColor_Bluish];
+            c.lblIngresoNeto.textColor = [UIColor whiteColor];
+        }
+        else{
+            c.contentView.backgroundColor = [UIColor OaoColor_GrayBackground];
+            c.lblIngresoNeto.textColor = [UIColor OaoColor_GrayText];
+        }
+    }
+}
+
 @end

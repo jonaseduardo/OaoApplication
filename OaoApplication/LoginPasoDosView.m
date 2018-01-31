@@ -151,6 +151,7 @@
 //CUSTOM METHODS
 
 -(void)pickName{
+   
     _nameTextField.closeButton.hidden = NO;
     [_nameTextField.headerText setFrame:CGRectMake(_nameTextField.headerText.frame.origin.x, 12, _nameTextField.headerText.frame.size.width, 12)];
     _nameTextField.headerText.font = [UIFont systemFontOfSize:12];
@@ -159,6 +160,7 @@
     [_nameTextField.textField becomeFirstResponder];
 }
 -(void)pickLastName{
+    
     _lastNameTextField.closeButton.hidden = NO;
     [_lastNameTextField.headerText setFrame:CGRectMake(_lastNameTextField.headerText.frame.origin.x, 12, _lastNameTextField.headerText.frame.size.width, 12)];
     _lastNameTextField.headerText.font = [UIFont systemFontOfSize:12];
