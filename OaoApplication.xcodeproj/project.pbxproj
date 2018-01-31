@@ -59,7 +59,7 @@
 		E9F689AC2017C0B3002E2556 /* SolicitudTarjetaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F689AB2017C0B3002E2556 /* SolicitudTarjetaViewController.m */; };
 		E9F689AF2017C0E9002E2556 /* SolicitudTarjetaView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F689AE2017C0E9002E2556 /* SolicitudTarjetaView.m */; };
 		E9F689B22017C109002E2556 /* SolicitudTarjetaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F689B12017C109002E2556 /* SolicitudTarjetaView.xib */; };
-		E9FC55C32012276300DE0D91 /* TarjetaCreditoLatamPassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FC55C22012276300DE0D91 /* TarjetaCreditoLatamPassView.xib */; };
+		E9FC55C32012276300DE0D91 /* OfertaTarjetaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FC55C22012276300DE0D91 /* OfertaTarjetaView.xib */; };
 		E9FC55C620123D2400DE0D91 /* LoginPasoDosParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC55C520123D2400DE0D91 /* LoginPasoDosParentViewController.m */; };
 		E9FC55C82012602A00DE0D91 /* Flow2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FC55C72012602A00DE0D91 /* Flow2.storyboard */; };
 		E9FC55CC2012656900DE0D91 /* UsuarioLogeadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC55CB2012656900DE0D91 /* UsuarioLogeadoViewController.m */; };
@@ -171,7 +171,7 @@
 		E9F689AD2017C0E9002E2556 /* SolicitudTarjetaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolicitudTarjetaView.h; sourceTree = "<group>"; };
 		E9F689AE2017C0E9002E2556 /* SolicitudTarjetaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolicitudTarjetaView.m; sourceTree = "<group>"; };
 		E9F689B12017C109002E2556 /* SolicitudTarjetaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SolicitudTarjetaView.xib; sourceTree = "<group>"; };
-		E9FC55C22012276300DE0D91 /* TarjetaCreditoLatamPassView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TarjetaCreditoLatamPassView.xib; sourceTree = "<group>"; };
+		E9FC55C22012276300DE0D91 /* OfertaTarjetaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfertaTarjetaView.xib; sourceTree = "<group>"; };
 		E9FC55C420123D2400DE0D91 /* LoginPasoDosParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPasoDosParentViewController.h; sourceTree = "<group>"; };
 		E9FC55C520123D2400DE0D91 /* LoginPasoDosParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPasoDosParentViewController.m; sourceTree = "<group>"; };
 		E9FC55C72012602A00DE0D91 /* Flow2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Flow2.storyboard; sourceTree = "<group>"; };
@@ -418,7 +418,7 @@
 		E9FC55C12012275500DE0D91 /* Flow 2 */ = {
 			isa = PBXGroup;
 			children = (
-				E9FC55C22012276300DE0D91 /* TarjetaCreditoLatamPassView.xib */,
+				E9FC55C22012276300DE0D91 /* OfertaTarjetaView.xib */,
 				E9DD713A201669780007173E /* UsuarioLogeadoMensajeView.xib */,
 				E9F689A520178C14002E2556 /* ComenzarSolicitudTarjetaView.xib */,
 			);
@@ -587,7 +587,7 @@
 				E9FC55C82012602A00DE0D91 /* Flow2.storyboard in Resources */,
 				E9F689A82017BE8B002E2556 /* SolicitudTarjeta.storyboard in Resources */,
 				E9D76853201F6633000E1107 /* ComponentTextFieldView.xib in Resources */,
-				E9FC55C32012276300DE0D91 /* TarjetaCreditoLatamPassView.xib in Resources */,
+				E9FC55C32012276300DE0D91 /* OfertaTarjetaView.xib in Resources */,
 				E9EBC900201A15F200DB2F7F /* DatosPersonalesPasoTresView.xib in Resources */,
 				E9B55415200E59E60038E5DB /* LoginPasoUnoView.xib in Resources */,
 				E9B553E0200E4D310038E5DB /* Main.storyboard in Resources */,

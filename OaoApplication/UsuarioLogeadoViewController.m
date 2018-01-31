@@ -145,7 +145,7 @@
 }
 
 - (IBAction)ir:(id)sender {
-    UIViewController *vc = [[UIViewController alloc]initWithNibName:@"TarjetaCreditoLatamPassView" bundle:[NSBundle mainBundle]];
+    UIViewController *vc = [[UIViewController alloc]initWithNibName:@"OfertaTarjetaView" bundle:[NSBundle mainBundle]];
     
     
     //UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];

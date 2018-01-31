@@ -15,6 +15,7 @@
 
 @property (nonatomic, readwrite) CGRect imageFrontRect;
 @property (strong, nonatomic) NSArray *beneficios;
+@property (weak, nonatomic) IBOutlet UIView *blueview;
 
 @end
 
@@ -29,6 +30,7 @@
     
     // Do any additional setup after loading the view.
    
+    self.blueview.backgroundColor = [UIColor OaoColor_Bluish];
     self.containerBlue.fillColor = [UIColor OaoColor_Bluish];
     self.containerBlue.lowerSide = [NSNumber numberWithFloat:0.85];
     self.containerBlue.inverted = YES;
@@ -114,6 +116,6 @@
 }
 
 + (UserConOfertaViewController * )getVcId {
-    return [[UserConOfertaViewController alloc] initWithNibName:@"TarjetaCreditoLatamPassView" bundle:[NSBundle mainBundle]];
+    return [[UserConOfertaViewController alloc] initWithNibName:@"OfertaTarjetaView" bundle:[NSBundle mainBundle]];
 }
 @end
