@@ -82,6 +82,7 @@
         keyboardShown = YES;
         //[self clearButtonSelection];
         //[self addKeyboardNavigationView:notification];
+        _lastNameTextField.textField.userInteractionEnabled = YES;
     }
 }
 
@@ -91,6 +92,10 @@
         keyboardShown = NO;
         [keyboardNavView removeFromSuperview];
         _scrollViewBottomConstraint.constant = bottomConstraintConstant;
+        self.titleLabel.hidden = NO;
+        [self.view setFrame:CGRectMake(self.view.frame.origin.x,0,self.view.frame.size.width,self.view.frame.size.height)];
+        _lastNameTextField.textField.userInteractionEnabled = NO;
+        
     }
     
 }
@@ -160,7 +165,9 @@
     [_nameTextField.textField becomeFirstResponder];
 }
 -(void)pickLastName{
-    
+    _lastNameTextField.textField.userInteractionEnabled = YES;
+    [self.view setFrame:CGRectMake(self.view.frame.origin.x,-40,self.view.frame.size.width,self.view.frame.size.height)];
+     self.titleLabel.hidden = YES;
     _lastNameTextField.closeButton.hidden = NO;
     [_lastNameTextField.headerText setFrame:CGRectMake(_lastNameTextField.headerText.frame.origin.x, 12, _lastNameTextField.headerText.frame.size.width, 12)];
     _lastNameTextField.headerText.font = [UIFont systemFontOfSize:12];
