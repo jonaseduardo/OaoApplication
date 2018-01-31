@@ -16,6 +16,7 @@
 + (LoginPasoDosView *)getVcId;
 @property (strong, nonatomic) IBOutlet UIView *contName;
 @property (strong, nonatomic) IBOutlet UIView *contLastName;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property (strong, nonatomic) IBOutlet UIButton *nextBtn;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollViewBottomConstraint;

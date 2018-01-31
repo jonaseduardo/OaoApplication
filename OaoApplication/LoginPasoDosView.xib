@@ -16,6 +16,7 @@
                 <outlet property="nextBtn" destination="mAD-wP-N3w" id="xZ6-mT-qa9"/>
                 <outlet property="scrollView" destination="p4h-YI-tYN" id="DoO-ae-BwX"/>
                 <outlet property="scrollViewBottomConstraint" destination="hRN-mX-Ff3" id="vjx-fM-6G6"/>
+                <outlet property="titleLabel" destination="MZs-K5-55q" id="zRc-Pb-dk0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="lrH-Dx-apa"/>
             </connections>
         </placeholder>
