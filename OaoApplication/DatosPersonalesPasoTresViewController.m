@@ -93,6 +93,7 @@
     
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+    _collectionView.allowsMultipleSelection = NO;
     
     self.ingresos = @[@"Menos de $10.000", @"$10.000 - $15.000", @"$15.000 - $25.000",@"Más de $25.000"];
 }
@@ -269,6 +270,7 @@
     }
     // get the track
     NSString *text = [self.ingresos objectAtIndex:indexPath.row];
+    
     cell.lblIngresoNeto.text = text;
     //cell.backgroundColor = [UIColor redColor];
     
@@ -282,14 +284,17 @@
     NSLog(@"selected=%@", selected);
     IngresoNetoMensualCollectionViewCell *cell = nil;
     
-    cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
-    if(!cell)
+    for(IngresoNetoMensualCollectionViewCell *c in collectionView.visibleCells)
     {
-        cell = [[IngresoNetoMensualCollectionViewCell alloc]init];
+        if([collectionView indexPathForCell:c] == indexPath){
+            c.contentView.backgroundColor = [UIColor OaoColor_Bluish];
+            c.lblIngresoNeto.textColor = [UIColor whiteColor];
+        }
+        else{
+            c.contentView.backgroundColor = [UIColor OaoColor_GrayBackground];
+            c.lblIngresoNeto.textColor = [UIColor OaoColor_GrayText];
+        }
     }
-    cell.contentView.backgroundColor = [UIColor OaoColor_Bluish];
-    cell.lblIngresoNeto.backgroundColor = [UIColor redColor];
-    
 }
 
 @end

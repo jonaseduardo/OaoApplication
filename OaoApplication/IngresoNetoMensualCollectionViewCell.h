@@ -11,6 +11,9 @@
 @interface IngresoNetoMensualCollectionViewCell : UICollectionViewCell
 
 +(CGFloat)cellHeight;
+
+
 @property (strong, nonatomic) IBOutlet UILabel *lblIngresoNeto;
+@property (nonatomic, assign) BOOL working;
 
 @end

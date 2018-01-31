@@ -10,6 +10,7 @@
 
 static CGFloat cellHeight = 99;
 
+
 @implementation IngresoNetoMensualCollectionViewCell
 
 -(id)init {
@@ -20,11 +21,14 @@ static CGFloat cellHeight = 99;
         [self setBackgroundColor:[UIColor clearColor]];
     }
     self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
+
     return self;
 }
 
 +(CGFloat)cellHeight {
     return cellHeight;
 }
+
+
 
 @end
