@@ -63,7 +63,7 @@
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db4-HV-Ix6">
                     <rect key="frame" x="0.0" y="60" width="375" height="40"/>
                     <subviews>
-                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-wy-71h">
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_error" translatesAutoresizingMaskIntoConstraints="NO" id="Az1-wy-71h">
                             <rect key="frame" x="20" y="9" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="NAn-6s-p2M"/>
@@ -105,6 +105,6 @@
     </objects>
     <resources>
         <image name="close_gray" width="26" height="26"/>
-        <image name="info" width="26" height="26"/>
+        <image name="icon_error" width="24" height="24"/>
     </resources>
 </document>

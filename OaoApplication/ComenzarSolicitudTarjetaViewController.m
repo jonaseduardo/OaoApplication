@@ -31,7 +31,7 @@
     self.myTableView.dataSource = self;
      [_myTableView registerNib:[UINib nibWithNibName:@"PasosTableViewCell" bundle:[NSBundle mainBundle] ] forCellReuseIdentifier:@"PasosTableViewCell"];
     
-    self.pasos = @[@"Asegurate de tener buena conexión durante todo el proceso. Te recomendamos usar WiFi o 4G.", @"Tené a mano tu documento. Te vamos a pedir que le saques una foto al frente y al dorso.", @"Como medida de seguridad para resguardar tu identidad vamos a pedirte que te saques una selfie.",@"Tené a mano tu documento. Te vamos a pedir que le saques una foto al frente y al dorso.",@"Tené a mano tu documento. Te vamos a pedir que le saques una foto al frente y al dorso.",@"Tené a mano tu documento. Te vamos a pedir que le saques una foto al frente y al dorso.",@"hola hola hola"];
+    self.pasos = @[@"Asegurate de tener buena conexión durante todo el proceso. Te recomendamos usar WiFi o 4G.", @"Tené a mano tu documento. Te vamos a pedir que le saques una foto al frente y al dorso.", @"Como medida de seguridad para resguardar tu identidad vamos a pedirte que te saques una selfie.",@"Tené a mano tu documento. Te vamos a pedir que le saques una foto al frente y al dorso."];
     
     self.contTiempoProceso.backgroundColor = [[UIColor colorWithRed:90.0f/255.0f green:190.0f/255.0f blue:255.0f/255.0f alpha:1.0] colorWithAlphaComponent:0.1f];
      //self.viewTiempoProceso.backgroundColor = [UIColor colorWithRed:90.0f/255.0f green:190.0f/255.0f blue:255.0f/255.0f alpha:0.1f];
