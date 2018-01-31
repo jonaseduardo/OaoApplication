@@ -23,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   /* UICollectionViewFlowLayout *cl = [[UICollectionViewFlowLayout alloc]init];
+    ((UICollectionViewFlowLayout *)_collectionView.collectionViewLayout).estimatedItemSize = CGSizeMake(100.f, 59.f);*/
     
     self.solicitarTarjetaBtn.backgroundColor = [UIColor OaoColor_DarkishBlue];
     self.imageFrontRect = self.imageFront.frame;
@@ -71,9 +73,12 @@
 {
     return self.beneficios.count;
 }
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    
     return CGSizeMake((self.collectionView.frame.size.width/2)-10,59);
+    //return UICollectionViewFlowLayoutAutomaticSize;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     

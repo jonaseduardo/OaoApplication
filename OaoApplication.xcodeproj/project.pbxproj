@@ -64,6 +64,8 @@
 		E9FC55C82012602A00DE0D91 /* Flow2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FC55C72012602A00DE0D91 /* Flow2.storyboard */; };
 		E9FC55CC2012656900DE0D91 /* UsuarioLogeadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC55CB2012656900DE0D91 /* UsuarioLogeadoViewController.m */; };
 		E9FC55CF2012669700DE0D91 /* UserConOfertaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC55CE2012669700DE0D91 /* UserConOfertaViewController.m */; };
+		E9FDB4882022018F00D77C6B /* IngresoNetoMensualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FDB4872022018F00D77C6B /* IngresoNetoMensualCell.xib */; };
+		E9FDB48C2022026900D77C6B /* IngresoNetoMensualCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FDB48B2022026900D77C6B /* IngresoNetoMensualCollectionViewCell.m */; };
 		E9FE1709201B93970092EB54 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FE1708201B93970092EB54 /* TextFieldViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +181,9 @@
 		E9FC55CB2012656900DE0D91 /* UsuarioLogeadoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioLogeadoViewController.m; sourceTree = "<group>"; };
 		E9FC55CD2012669700DE0D91 /* UserConOfertaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserConOfertaViewController.h; sourceTree = "<group>"; };
 		E9FC55CE2012669700DE0D91 /* UserConOfertaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserConOfertaViewController.m; sourceTree = "<group>"; };
+		E9FDB4872022018F00D77C6B /* IngresoNetoMensualCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngresoNetoMensualCell.xib; sourceTree = "<group>"; };
+		E9FDB48A2022026900D77C6B /* IngresoNetoMensualCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngresoNetoMensualCollectionViewCell.h; sourceTree = "<group>"; };
+		E9FDB48B2022026900D77C6B /* IngresoNetoMensualCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngresoNetoMensualCollectionViewCell.m; sourceTree = "<group>"; };
 		E9FE1707201B93970092EB54 /* TextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
 		E9FE1708201B93970092EB54 /* TextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +255,7 @@
 		E9B553D4200E4D310038E5DB /* OaoApplication */ = {
 			isa = PBXGroup;
 			children = (
+				E9FDB4892022023C00D77C6B /* Cells */,
 				E9F689A92017C099002E2556 /* SolicitudTarjeta */,
 				E9FC55C92012652700DE0D91 /* UsuarioLogeado */,
 				E9E402D42010D935007ADB12 /* Modals */,
@@ -270,8 +276,6 @@
 				E9B55409200E4EDC0038E5DB /* BaseParentStepsMultiplesViewsViewController.m */,
 				E9B55416200E6FA30038E5DB /* BBVAPickerButtonView.h */,
 				E9B55417200E6FA30038E5DB /* BBVAPickerButtonView.m */,
-				E9DD71342016255F0007173E /* BeneficiosCollectionViewCell.h */,
-				E9DD71352016255F0007173E /* BeneficiosCollectionViewCell.m */,
 				E9EBC90C201A5BB100DB2F7F /* OaoWebView.h */,
 				E9EBC90D201A5BB100DB2F7F /* OaoWebView.m */,
 				E9EBC90E201A5BB100DB2F7F /* OaoWebView.xib */,
@@ -362,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				E9DD7132201623320007173E /* BeneficiosCollectionViewCell.xib */,
+				E9FDB4872022018F00D77C6B /* IngresoNetoMensualCell.xib */,
 			);
 			name = CollectionView;
 			sourceTree = "<group>";
@@ -438,6 +443,17 @@
 				E9F689A320178BE4002E2556 /* ComenzarSolicitudTarjetaViewController.m */,
 			);
 			name = UsuarioLogeado;
+			sourceTree = "<group>";
+		};
+		E9FDB4892022023C00D77C6B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E9DD71342016255F0007173E /* BeneficiosCollectionViewCell.h */,
+				E9DD71352016255F0007173E /* BeneficiosCollectionViewCell.m */,
+				E9FDB48A2022026900D77C6B /* IngresoNetoMensualCollectionViewCell.h */,
+				E9FDB48B2022026900D77C6B /* IngresoNetoMensualCollectionViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		E9FE1705201B7A750092EB54 /* ComponentOptionPicker */ = {
@@ -576,6 +592,7 @@
 				E9B553E5200E4D310038E5DB /* LaunchScreen.storyboard in Resources */,
 				E9B553E2200E4D310038E5DB /* Assets.xcassets in Resources */,
 				E9EBC90A201A23A800DB2F7F /* ComponentDateView.xib in Resources */,
+				E9FDB4882022018F00D77C6B /* IngresoNetoMensualCell.xib in Resources */,
 				E9B55420200E71C10038E5DB /* BBVAPickerButtonView.xib in Resources */,
 				E9F689A620178C14002E2556 /* ComenzarSolicitudTarjetaView.xib in Resources */,
 				E9DD713B201669780007173E /* UsuarioLogeadoMensajeView.xib in Resources */,
@@ -650,6 +667,7 @@
 				E9DD7136201625600007173E /* BeneficiosCollectionViewCell.m in Sources */,
 				E9EBC909201A23A800DB2F7F /* ComponentDateViewController.m in Sources */,
 				E9655E95200F84F3000E96AE /* LoginPasoDosView.m in Sources */,
+				E9FDB48C2022026900D77C6B /* IngresoNetoMensualCollectionViewCell.m in Sources */,
 				E9EBC90F201A5BB100DB2F7F /* OaoWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

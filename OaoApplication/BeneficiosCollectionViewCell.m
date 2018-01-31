@@ -27,7 +27,7 @@ static CGFloat cellHeight = 99;
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
     }
-    
+    self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
     return self;
 }
 
