@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *tiempoProceso;
 @property (strong, nonatomic) IBOutlet UITableView *myTableView;
 
+@property (strong, nonatomic) IBOutlet UIView *contTiempoProceso;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightMyTableView;
 @end
