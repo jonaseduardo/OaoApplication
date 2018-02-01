@@ -43,11 +43,7 @@
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
    
-    self.beneficios = @[@"Gratis", @"$50.000", @"Beneficios",@"Acumula Millas",@"Gratis",@"Beneficios",@"50.000"];
-    if(self.beneficios.count > 4 ){
-        //si no es un entero, va a haber un scroll
-        _collectionViewHeight.constant =(self.beneficios.count/2) * ( 59+10);
-    }
+    self.beneficios = @[@"Gratis", @"$50.000", @"Beneficios",@"Acumula Millas",@"Gratis",@"Beneficios",@"50.000",@"Beneficios",@"Beneficios"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
