@@ -22,6 +22,10 @@
 @property (strong, nonatomic) UIViewController *currentViewController;
 @property (nonatomic, strong) NSArray <Documento> *tiposDocumento;
 @property (nonatomic, strong) NSNumber* tipoUsuario;
+@property (nonatomic,strong) NSString *fechaNac;
+@property (nonatomic,strong) NSString *paisNac;
+@property (nonatomic,strong) NSString *nacionalidad;
+
 @end
 
 @implementation LoginViewController
@@ -69,6 +73,7 @@
     [self performSegueWithIdentifier:@"segueSalir" sender:self];
 }
 -(void)goToSalir:(NSNumber *)tipoUser{
+    NSLog(@"goToSalir");
     self.tipoUsuario = tipoUser;
     [self performSegueWithIdentifier:@"segueSalir" sender:self];
 }
@@ -117,6 +122,20 @@
     [self transitionToViewController:vcId currentViewController:self.currentViewController containerView:self.containerView andTargetViewController:self];
     
 }
+-(void)setFecha:(NSString *)Fecha setPaisNac:(NSString *)Pais setNacionalidad:(NSString *)Nacionalidad{
+    _fechaNac = Fecha;
+    _paisNac = Pais;
+    _nacionalidad = Nacionalidad;
+}
+-(NSString *)getFechaNac{
+    return _fechaNac;
+}
+-(NSString *)getPaisNac{
+    return _paisNac;
+}
+-(NSString *)getNacionalidad{
+    return _nacionalidad;
+}
 -(void)primeraCarga{
     //seteo los tipos de documentos en el picker view
     NSMutableArray * documentos = [[NSMutableArray alloc] init];
@@ -130,6 +149,6 @@
     
     _tiposDocumento = [NSArray<Documento> arrayWithArray:documentos];
     
-    [self transitionToViewController:[LoginPasoUnoView getVcId]];
+    [self transitionToViewController:[self returnViewLoginPasoUno]];
 }
 @end

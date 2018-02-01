@@ -21,6 +21,12 @@
 -(UIViewController *)returnViewLoginPasoTres;
 
 -(NSArray<Documento>*)getTiposDocumento;
+-(NSString *)getFechaNac;
+-(NSString *)getPaisNac;
+-(NSString *)getNacionalidad;
+
+-(void)setFecha:(NSString *)Fecha setPaisNac:(NSString *)Pais setNacionalidad:(NSString *)Nacionalidad;
+
 -(void)setClose;
 -(void)setVolver;
 -(void)setSalir;
