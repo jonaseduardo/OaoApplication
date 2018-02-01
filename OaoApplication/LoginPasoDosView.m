@@ -80,9 +80,7 @@
 - (void)keyboardDidShow:(NSNotification *)notification {
     if (!keyboardShown) {
         keyboardShown = YES;
-        //[self clearButtonSelection];
-        //[self addKeyboardNavigationView:notification];
-        _lastNameTextField.textField.userInteractionEnabled = YES;
+        
     }
 }
 
@@ -91,13 +89,10 @@
     if (keyboardShown) {
         keyboardShown = NO;
         [keyboardNavView removeFromSuperview];
-        _scrollViewBottomConstraint.constant = bottomConstraintConstant;
-        self.titleLabel.hidden = NO;
-        [self.view setFrame:CGRectMake(self.view.frame.origin.x,0,self.view.frame.size.width,self.view.frame.size.height)];
-        _lastNameTextField.textField.userInteractionEnabled = NO;
-        
+        [_scrollView  setContentOffset:CGPointMake(0,0) animated:YES];
+         _lastNameTextField.textField.userInteractionEnabled = NO;
+        _nameTextField.textField.userInteractionEnabled = NO;
     }
-    
 }
 - (void)addDismissWithTap
 {
@@ -156,7 +151,7 @@
 //CUSTOM METHODS
 
 -(void)pickName{
-   
+    _nameTextField.textField.userInteractionEnabled = YES;
     _nameTextField.closeButton.hidden = NO;
     [_nameTextField.headerText setFrame:CGRectMake(_nameTextField.headerText.frame.origin.x, 12, _nameTextField.headerText.frame.size.width, 12)];
     _nameTextField.headerText.font = [UIFont systemFontOfSize:12];
@@ -165,9 +160,10 @@
     [_nameTextField.textField becomeFirstResponder];
 }
 -(void)pickLastName{
-    _lastNameTextField.textField.userInteractionEnabled = YES;
-    [self.view setFrame:CGRectMake(self.view.frame.origin.x,-40,self.view.frame.size.width,self.view.frame.size.height)];
-     self.titleLabel.hidden = YES;
+    
+    CGFloat heightToMove = (self.titleLabel.frame.size.height + self.contName.frame.size.height+self.contLastName.frame.size.height);
+     _lastNameTextField.textField.userInteractionEnabled = YES;
+    [_scrollView setContentOffset:CGPointMake(0,_contLastName.frame.origin.y-(_scrollView.frame.size.height - heightToMove))];
     _lastNameTextField.closeButton.hidden = NO;
     [_lastNameTextField.headerText setFrame:CGRectMake(_lastNameTextField.headerText.frame.origin.x, 12, _lastNameTextField.headerText.frame.size.width, 12)];
     _lastNameTextField.headerText.font = [UIFont systemFontOfSize:12];
