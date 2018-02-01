@@ -18,6 +18,7 @@
                 <outlet property="scrollView" destination="ryH-wF-L1I" id="zZl-zd-A3v"/>
                 <outlet property="textFieldNombre" destination="qW2-Q7-aw0" id="Naz-fm-Smr"/>
                 <outlet property="textFieldNumeroDocumento" destination="9Pn-VD-XP0" id="TT7-Lb-xC5"/>
+                <outlet property="titleLabel" destination="p3j-G7-e8X" id="mmk-ij-Xut"/>
                 <outlet property="view" destination="iN0-l3-epB" id="sKY-Nh-XY4"/>
             </connections>
         </placeholder>

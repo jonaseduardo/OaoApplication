@@ -24,5 +24,6 @@
 - (IBAction)nextBtnTapped:(id)sender;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollBottomConstraint;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end

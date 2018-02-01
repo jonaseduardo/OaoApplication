@@ -130,6 +130,6 @@
     
     _tiposDocumento = [NSArray<Documento> arrayWithArray:documentos];
     
-    [self transitionToViewController:[TerminosCondicionesViewController getVcId]];
+    [self transitionToViewController:[LoginPasoUnoView getVcId]];
 }
 @end

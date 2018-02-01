@@ -159,7 +159,9 @@
     if (keyboardShown) {
         keyboardShown = NO;
         [keyboardNavView removeFromSuperview];
-        _scrollBottomConstraint.constant = bottomConstraintConstant;
+        [_scrollView  setContentOffset:CGPointMake(0,0) animated:YES];
+        _documentNumber.textField.userInteractionEnabled = NO;
+        _nombreParejaTextField.textField.userInteractionEnabled = NO;
     }
     
 }
@@ -214,6 +216,7 @@
     }];
 }
 -(void)pickNumberDocument{
+    _documentNumber.textField.userInteractionEnabled = YES;
     _documentNumber.closeButton.hidden = NO;
     [_documentNumber.headerText setFrame:CGRectMake(_documentNumber.headerText.frame.origin.x, 12, _documentNumber.headerText.frame.size.width, 12)];
     _documentNumber.headerText.font = [UIFont systemFontOfSize:12];
@@ -222,6 +225,9 @@
     [_documentNumber.textField becomeFirstResponder];
 }
 -(void)pickNombrePareja{
+    CGFloat heightToMove = (self.titleLabel.frame.size.height + self.contPickerViewDocumento.frame.size.height+self.contNumberDocument.frame.size.height+self.contNombrePareja.frame.size.height);
+    _nombreParejaTextField.textField.userInteractionEnabled = YES;
+    [_scrollView setContentOffset:CGPointMake(0,_contNombrePareja.frame.origin.y-(_scrollView.frame.size.height - heightToMove))];
     _nombreParejaTextField.closeButton.hidden = NO;
     [_nombreParejaTextField.headerText setFrame:CGRectMake(_nombreParejaTextField.headerText.frame.origin.x, 12, _nombreParejaTextField.headerText.frame.size.width, 12)];
     _nombreParejaTextField.headerText.font = [UIFont systemFontOfSize:12];
