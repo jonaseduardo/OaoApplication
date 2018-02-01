@@ -15,6 +15,8 @@
     int index;
 }
 
+@property (weak, nonatomic) IBOutlet UILabel *lblNombre;
+
 @end
 
 @implementation UsuarioLogeadoMensajeViewController

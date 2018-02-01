@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71A38E392022546D00CBBEF0 /* TerminosCondicionesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A38E372022546D00CBBEF0 /* TerminosCondicionesViewController.m */; };
+		71A38E3A2022546D00CBBEF0 /* TerminosCondicionesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A38E382022546D00CBBEF0 /* TerminosCondicionesViewController.xib */; };
 		E9462E392018C36E0059FDEC /* SolicitudTarjetaDatosPersonalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9462E382018C36E0059FDEC /* SolicitudTarjetaDatosPersonalesViewController.m */; };
 		E9462E3C2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9462E3B2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.m */; };
 		E9462E3E2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9462E3D2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib */; };
@@ -87,6 +89,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71A38E362022546D00CBBEF0 /* TerminosCondicionesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminosCondicionesViewController.h; sourceTree = "<group>"; };
+		71A38E372022546D00CBBEF0 /* TerminosCondicionesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerminosCondicionesViewController.m; sourceTree = "<group>"; };
+		71A38E382022546D00CBBEF0 /* TerminosCondicionesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TerminosCondicionesViewController.xib; sourceTree = "<group>"; };
 		E9462E372018C36E0059FDEC /* SolicitudTarjetaDatosPersonalesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolicitudTarjetaDatosPersonalesViewController.h; sourceTree = "<group>"; };
 		E9462E382018C36E0059FDEC /* SolicitudTarjetaDatosPersonalesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolicitudTarjetaDatosPersonalesViewController.m; sourceTree = "<group>"; };
 		E9462E3A2018C3A40059FDEC /* DatosPersonalesPasoUnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatosPersonalesPasoUnoViewController.h; sourceTree = "<group>"; };
@@ -213,6 +218,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71A38E352022538B00CBBEF0 /* TerminosCondiciones */ = {
+			isa = PBXGroup;
+			children = (
+				71A38E362022546D00CBBEF0 /* TerminosCondicionesViewController.h */,
+				71A38E372022546D00CBBEF0 /* TerminosCondicionesViewController.m */,
+				71A38E382022546D00CBBEF0 /* TerminosCondicionesViewController.xib */,
+			);
+			name = TerminosCondiciones;
+			sourceTree = "<group>";
+		};
 		E9631D9C2020C22F00C6C1A4 /* DiagonalView */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +352,7 @@
 		E9B55412200E59AE0038E5DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				71A38E352022538B00CBBEF0 /* TerminosCondiciones */,
 				E9631D9D2020EB9200C6C1A4 /* TableViewCell */,
 				E9631D9C2020C22F00C6C1A4 /* DiagonalView */,
 				E9FE1706201B93160092EB54 /* ComponentTextField */,
@@ -601,6 +617,7 @@
 				E9655E9C200FA143000E96AE /* LoginPasoTresView.xib in Resources */,
 				E9462E3E2018C4160059FDEC /* DatosPersonalesPasoUnoView.xib in Resources */,
 				E9B5542B200E7BA30038E5DB /* TipoDocumentoPickerView.xib in Resources */,
+				71A38E3A2022546D00CBBEF0 /* TerminosCondicionesViewController.xib in Resources */,
 				E9FC55C82012602A00DE0D91 /* Flow2.storyboard in Resources */,
 				E9F689A82017BE8B002E2556 /* SolicitudTarjeta.storyboard in Resources */,
 				E9D76853201F6633000E1107 /* ComponentTextFieldView.xib in Resources */,
@@ -663,6 +680,7 @@
 				E9EBC926201A8CA400DB2F7F /* Documento.m in Sources */,
 				E9631DA02020EBE000C6C1A4 /* PasosTableViewCell.m in Sources */,
 				E9EBC927201A8CA400DB2F7F /* UIImage+WalletBundle.m in Sources */,
+				71A38E392022546D00CBBEF0 /* TerminosCondicionesViewController.m in Sources */,
 				E9F689A420178BE4002E2556 /* ComenzarSolicitudTarjetaViewController.m in Sources */,
 				E9DD7136201625600007173E /* BeneficiosCollectionViewCell.m in Sources */,
 				E9EBC909201A23A800DB2F7F /* ComponentDateViewController.m in Sources */,

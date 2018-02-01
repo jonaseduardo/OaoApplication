@@ -12,6 +12,7 @@
 #import "LoginPasoTresView.h"
 #import "UIColor+WalletColors.h"
 #import "SalirModalViewController.h"
+#import "TerminosCondicionesViewController.h"
 
 @interface LoginViewController ()
 
@@ -129,6 +130,6 @@
     
     _tiposDocumento = [NSArray<Documento> arrayWithArray:documentos];
     
-    [self transitionToViewController:[self returnViewLoginPasoUno]];
+    [self transitionToViewController:[TerminosCondicionesViewController getVcId]];
 }
 @end
